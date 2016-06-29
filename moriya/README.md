@@ -36,35 +36,36 @@
 
 ---
 ## パスウェイデータベースとは
-パスウェイとは、生体内での遺伝子やタンパク質、その他の化合物等の分子間相互作用を "経路" として表現したものです。相互作用の知識を集積して可視化、電子化したものがパスウェイデータベースと呼ばれています。歴史的には、代謝経路の表現から始まりました。
+パスウェイとは、生体内での遺伝子やタンパク質、その他の化合物等の分子間相互作用を "経路" として表現したものです。相互作用の知識を集積して可視化、電子化したものがパスウェイデータベースと呼ばれています。歴史的には、代謝経路の表現から始まりました
 
 - [ベーリンガーマンハイム社（現ロシュ社）の代謝マップ](http://www.roche.com/sustainability/what_we_do/for_communities_and_environment/philanthropy/science_education/pathways.htm) (1965~)
+- 最初は紙媒体での出版。のちに[電子化](http://biochemical-pathways.com/)されました
 
 ![pathway1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathway1.png)
 
-- 最初は紙媒体での出版。のちに[電子化](http://biochemical-pathways.com/)されました。
-
 ![pathway2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathway2.png)
 
-- コンピュータ上で表現することで、様々な可視化が行えるようになり、生命現象を表現や理解が行い易くなりました。
-- また、データベース化することで網羅的に扱えるようになり、コンピューターでの利用が可能になしました。
+- 計算機上で表現することで、様々な可視化が行えるようになり、パスウェイ全体を俯瞰したり、一部の相互作用に注目したり、生命現象の理解が行い易くなります
+- また、データベース化することで網羅的に扱えるようになり、コンピューターでの利用が可能になします
   - ゲノムアノテーションや種間比較、進化解析
   - 遺伝子発現などのエンリッチメント解析
   - モデル化、シミュレーション、予測
 
-今回の講習では遺伝子やタンパク質、化合物をパスウェイデータベースにマッピングして可視化していきます
+今回の講習では遺伝子やタンパク質、化合物をパスウェイデータベースにマッピングして可視化と、ブラウザ経由で行うゲノムアノテーションについて実習していきます
 
 ---
 ## いろいろなパスウェイデータベース
-#### pathguid
+#### Pathguide
 - http://www.pathguide.org/
 - パスウェイリソースのリスト約 550　(2013)
   - Availability: 有料か無料か  
   - Standards: 標準データ形式(BioPAX, SBML等)に準拠しているかどうか
 
-歴史的には代謝経路の表現から始まった  
-現在ではタンパク質間相互作用、シグナル伝達系、遺伝子制御、環境シグナルなど様々なものが含まれる
+![pathguide](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathguide.png)
 
+歴史的には代謝経路の表現から始まりましたが、現在ではタンパク質間相互作用、シグナル伝達系、遺伝子制御、環境シグナルなど様々な生命現象がパスウェイとして表現されています
+
+- Pathguide での分類
   - タンパク質間相互作用
   - 代謝パスウェイ
   - シグナリングパスウェイ
@@ -75,19 +76,23 @@
   - アミノ酸配列解析
   - その他
 
+#### パスウェイデータベースの表現
+見やすくするために、ダイアグラムで表現されていることが多くなっています
+
+- KEGG Pathway での表現例
+  - 代謝パスウェイでは代謝産物をノード、酵素反応をエッジとして表現されています
+  - 制御系ではタンパク質や遺伝子、その他の小分子をノード、その関係性（活性化、抑制、リン酸化など）がエッジとして表現されています
+  
 ![pathway1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-pathway1.png)
 
-可視化の際、一般的に代謝パスウェイでは代謝産物をノード、酵素反応をエッジとして表現し、制御系ではタンパク質や遺伝子、その他の小分子がノード、その関係性（活性化、抑制、リン酸化など）がエッジとして表現される
-
-
 #### パスウェイデータベースのデータ形式
-XML で記述されていることが多い  
-- BioPAX (Biological Pathways Exchange) は静的なマップ表現
+計算機での取り扱いを目的として XML (Extensible Markup Language) で記述されていることが多くなっています
+- BioPAX (Biological Pathways Exchange) は静的なマップ表現するための形式
   - Level 1：代謝パスウェイ
   - Level 2：タンパク質間相互作用
   - Level 3：シグナル伝達
-- SBML (Systems Biology Markup Language)、CellML、CSML (Cell System Markup Language)は kinetics も取り扱えるため、シミュレーションなどで利用可能
-- PSI-MI (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述
+- SBML (Systems Biology Markup Language)、CellML、CSML (Cell System Markup Language) は kinetics も取り扱えるため、シミュレーションなどで利用可能な形式
+- PSI-MI (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述するための形式
 - KGML (KEGG Markup Language) は KEGG 独自のフォーマット
 
 
