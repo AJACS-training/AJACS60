@@ -110,21 +110,33 @@
 
 #### 実習 1-1. 対象生物種を見てみよう  
 - http://biocyc.org/biocyc-pgdb-list.shtml
-- データベースには３つのレベルがあります
-  - Tier 1：専門家が手作業で作成した文献ベースのデータ (7 DBs)
+- 各データベースには３つのレベルがあります
+  - Tier 1：専門家が手作業で作成した文献ベースのデータから構築したデータベース (7 DBs)
   - Tier 2：自動ツールで作成したデータを手作業で修正 (>40 DBs)
-  - Tier 3：自動ツール (>7,500 DBs)
+  - Tier 3：自動ツールで作成 (>7,500 DBs)
 - MetaCyc だけは 生物種のデータベースではなく、2,000 種以上から構築したリファレンス代謝パスウェイ
 
 ![biocyc2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc2.png)
 
 #### 実習 1-2. 好きな生物のパスウェイを見てみよう
-- 好きな生物種をクリック（例： [EcoCyc](http://biocyc.org/ecocyc/index.shtml)）
-- 右上の検索ボックスで "glycolysis" や "tca" などの生命現象関連の単語を入力し、Quick Search ボタンをクリック
-- ![biocyc6](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc6.png)
-- パスウェイが存在する場合、リストが表示されるので、クリック
-- 代謝産物のパスウェイが表示される
-- More Detail ボタンをクリックすると、酵素の情報が追加され、もう一度 More Detail ボタンをクリックすると代謝産物の構造情報が追加される
+- リストから好きな生物種のデータベースへ移動（例： [EcoCyc](http://biocyc.org/ecocyc/index.shtml)）
+- 右上の検索ボックスで "glycolysis" や "tca" などの注目している生命現象関連の単語を入力し、Quick Search ボタンをクリック
+
+![biocyc3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc3.png)
+
+- パスウェイのリストが表示されるので、クリック
+
+![biocyc4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc4.png)
+
+- 代謝パスウェイが表示されます
+  - More Detail ボタンをクリックすると、酵素名、代謝産物の構造などが追加される
+
+![biocyc5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc5.png)
+
+- EcoCyc など一部の生物種では、代謝パスウェイに関わる遺伝子制御ネットワークも表示されます
+
+![biocyc6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc6.png)
+
 - 右の Options メニューから、表示のカスタマイズやダウンロードが可能
 - ![biocyc3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc3.png)
 
