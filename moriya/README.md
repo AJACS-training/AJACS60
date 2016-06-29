@@ -45,7 +45,7 @@
 
 ![pathway2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathway2.png)
 
-- コンピュータ上で表現することで、様々な可視化が行えるようになり、パスウェイ全体を俯瞰したり、一部の相互作用に注目したり、生命現象の理解が行い易くなります
+- 計算機上で表現することで、様々な可視化が行えるようになり、パスウェイ全体を俯瞰したり、一部の相互作用に注目したり、生命現象の理解が行い易くなります
 - また、データベース化することで網羅的に扱えるようになり、コンピューターでの利用が可能になします
   - ゲノムアノテーションや種間比較、進化解析
   - 遺伝子発現などのエンリッチメント解析
@@ -55,15 +55,17 @@
 
 ---
 ## いろいろなパスウェイデータベース
-#### pathguid
+#### Pathguide
 - http://www.pathguide.org/
 - パスウェイリソースのリスト約 550　(2013)
   - Availability: 有料か無料か  
   - Standards: 標準データ形式(BioPAX, SBML等)に準拠しているかどうか
 
-歴史的には代謝経路の表現から始まった  
-現在ではタンパク質間相互作用、シグナル伝達系、遺伝子制御、環境シグナルなど様々なものが含まれる
+![pathguide](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathguide.png)
 
+歴史的には代謝経路の表現から始まりましたが、現在ではタンパク質間相互作用、シグナル伝達系、遺伝子制御、環境シグナルなど様々な生命現象がパスウェイとして表現されています
+
+- Pathguide での分類
   - タンパク質間相互作用
   - 代謝パスウェイ
   - シグナリングパスウェイ
@@ -74,19 +76,23 @@
   - アミノ酸配列解析
   - その他
 
+#### パスウェイデータベースの表現
+見やすくするために、ダイアグラムで表現されていることが多くなっています
+
+- KEGG Pathway での表現例
+  - 代謝パスウェイでは代謝産物をノード、酵素反応をエッジとして表現されています
+  - 制御系ではタンパク質や遺伝子、その他の小分子をノード、その関係性（活性化、抑制、リン酸化など）がエッジとして表現されています
+  
 ![pathway1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-pathway1.png)
 
-可視化の際、一般的に代謝パスウェイでは代謝産物をノード、酵素反応をエッジとして表現し、制御系ではタンパク質や遺伝子、その他の小分子がノード、その関係性（活性化、抑制、リン酸化など）がエッジとして表現される
-
-
 #### パスウェイデータベースのデータ形式
-XML で記述されていることが多い  
-- BioPAX (Biological Pathways Exchange) は静的なマップ表現
+計算機での取り扱いを目的として XML (Extensible Markup Language) で記述されていることが多くなっています
+- BioPAX (Biological Pathways Exchange) は静的なマップ表現するための形式
   - Level 1：代謝パスウェイ
   - Level 2：タンパク質間相互作用
   - Level 3：シグナル伝達
-- SBML (Systems Biology Markup Language)、CellML、CSML (Cell System Markup Language)は kinetics も取り扱えるため、シミュレーションなどで利用可能
-- PSI-MI (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述
+- SBML (Systems Biology Markup Language)、CellML、CSML (Cell System Markup Language) は kinetics も取り扱えるため、シミュレーションなどで利用可能な形式
+- PSI-MI (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述するための形式
 - KGML (KEGG Markup Language) は KEGG 独自のフォーマット
 
 
