@@ -1,0 +1,153 @@
+>gi|31543380|ref|NP_009193.2| protein DJ-1 [Homo sapiens]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MASKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPVDVMRRAGIKV
+--TVAGLAGKDPVQCSR-DVVICPDASLEDAKKE-----GPYDVVVLPGGNLGAQNLSES
+AAVKEILKE-QENRKGLIAAICAGPT-ALLAHEIGFGSKVTTHPLAKDKMMNGGHYTYSE
+NR-VEKDGLILTSRGPGTSFEFALAIVEALNGKEVAAQVKA-PLVLKD--
+>gi|73956706|ref|XP_859031.1| PREDICTED: protein DJ-1 isoform 6 [Canis lupus familiaris]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MASKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPVDVMRRAGIKV
+--TVAGLAGKDPVQCSR-DVIICPDASLEDAKKE-----GPYDVVILPGGNLGAQNLCES
+AAVKEILKE-QENRKGLIAAICAGPT-ALLAHEIGFGSKVTTHPLAKDKMMNGSHYSYSE
+NR-VEKDGLILTSRGPGTSFEFALAIVEALSGKDVADQVKA-PLVLKD--
+>gi|62751849|ref|NP_001015572.1| protein DJ-1 [Bos taurus]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MASKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPVDVMRRAGIKV
+--TVAGLAGKDPVQCSR-DVVICPDASLEDAKKE-----GPYDVVVLPGGNLGAQNLSES
+AAVKEILKE-QEKRKGLIAAICAGPT-ALLAHEIGFGSKVTTHPLAKDKMMNGSHYSYSE
+NR-VEKDGLILTSRGPGTSFEFALKIVEVLVGKEVADQVKA-PLVLKD--
+>gi|55741460|ref|NP_065594.2| protein DJ-1 [Mus musculus]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MASKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPVDVMRRAGIKV
+--TVAGLAGKDPVQCSR-DVMICPDTSLEDAKTQ-----GPYDVVVLPGGNLGAQNLSES
+PMVKEILKE-QESRKGLIAAICAGPT-ALLAHEVGFGCKVTTHPLAKDKMMNGSHYSYSE
+SR-VEKDGLILTSRGPGTSFEFALAIVEALVGKDMANQVKA-PLVLKD--
+>gi|471013491|ref|NP_001264180.1| protein DJ-1 isoform 2 [Rattus norvegicus]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MASKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPVDIMRRAGIKV
+--TVAGLAGKDPVQCSR-DVVICPDTSLEEAKTQ-----GPYDVVVLPGGNLGAQNLSES
+ALVKEILKE-QENRKGLIAAICAGPT-ALLAHEVGFGCKVTSHPLAKDKMMNGSHYSYSE
+SR-VEKDGLILTSRGPGTSFEFALAIVEALSGKDMANQVKA-PLVLKD--
+>gi|45383015|ref|NP_989916.1| protein DJ-1 [Gallus gallus]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MASKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPTDVMRRAGIKV
+--TVAGLTGKEPVQCSR-DVLICPDASLEDARKE-----GPYDVIVLPGGNLGAQNLSES
+AAVKDILKD-QESRKGLIAAICAGPT-ALLAHGIGFGSKVITHPLAKDKMMNGAHYCYSE
+SR-VEKDGNILTSRGPGTSFEFGLAIVEALMGKEVAEQVKA-PLILKD--
+>gi|54400374|ref|NP_001005938.1| protein DJ-1 [Danio rerio]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MAGKRA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAK-GAEEMETVIPVDVMRRAGIAV
+--TVAGLAGKEPVQCSR-EVMICPDSSLEDAHKQ-----GPYDVVLLPGGLLGAQNLSES
+PAVKEVLKD-QEGRKGLIAAICAGPT-ALLAHGIAYGSTVTTHPGAKDKMMAGDHYKYSE
+AR-VQKDGNVITSRGPGTSFEFALTIVEELMGAEVAAQVKA-PLILKD--
+>gi|28571932|ref|NP_651825.3| dj-1beta [Drosophila melanogaster]
+------------------------------------------------------------
+-------------------MVFFG------------------------------------
+----------FP-------QISRHFSKFTKMSKSA-------------------------
+------------------------------------------------------------
+--------------------------------LVILAP-GAEEMEFIIAADVLRRAGIKV
+--TVAGLNGGEAVKCSR-DVQILPDTSLAQ-VAS-----DKFDVVVLPGGLGGSNAMGES
+SLVGDLLRS-QESGGGLIAAICAAPT-VLAKHGVASGKSLTSYPSMKPQLVN--NYSYVD
+DKTVVKDGNLITSRGPGTAYEFALKIAEELAGKEKVQEVAK-GLLVAYN-
+>gi|24653499|ref|NP_610916.1| DJ-1alpha [Drosophila melanogaster]
+------------------------------------------------------------
+----------------MLSVLRKS------------------------------------
+----------FPNGVTHAHRVIRCKSNQDKCAKNA-------------------------
+------------------------------------------------------------
+--------------------------------LIILAP-GAEEMEFTISADVLRRGKILV
+--TVAGLHDCEPVKCSR-SVVIVPDTSLEEAVTR-----GDYDVVVLPGGLAGNKALMNS
+SAVGDVLRC-QESKGGLIAAICAAPT-ALAKHGIGKGKSITSHPDMKPQLKE--LYCYID
+DKTVVQDGNIITSRGPGTTFDFALKITEQLVGAEVAKEVAK-AMLWTYKP
+>gi|17531319|ref|NP_493696.1| Protein DJR-1.1 [Caenorhabditis elegans]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MAQKSA-------------------------
+------------------------------------------------------------
+--------------------------------LIILAAEGAEEMEVIITGDVLARGEIRV
+--VYAGLDGAEPVKCAR-GAHIVPDVKLED-VET-----EKFDIVILPGGQPGSNTLAES
+LLVRDVLKS-QVESGGLIGAICAAPI-ALLSHGV-KAELVTSHPSVKEKLEKG-GYKYSE
+DR-VVVSGKIITSRGPGTAFEFALKIVELLEGKDKATSLIA-PMLLKL--
+>gi|17558714|ref|NP_504132.1| Protein DJR-1.2 [Caenorhabditis elegans]
+------------------------------------------------------------
+------------------------------------------------------------
+----------------------------MAAQKSA-------------------------
+------------------------------------------------------------
+--------------------------------LILLPPEDAEEIEVIVTGDVLVRGGLQV
+--LYAG-SSTEPVKCAK-GARIVPDVALKD-VKN-----KTFDIIIIPGG-PGCSKLAEC
+PVIGELLKT-QVKSGGLIGAICAGPT-VLLAHGI-VAERVTCHYTVKDKMTEG-GYKYLD
+DN-VVISDRVITSKGPGTAFEFALKIVETLEGPEKTNSLLK-PLCLAK--
+>gi|19115741|ref|NP_594829.1| ThiJ domain protein [Schizosaccharomyces pombe 972h-]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MVK----------------------------
+------------------------------------------------------------
+-------------------------------VCLFVAD-GTDEIEFSAPWGIFKRAEIPI
+DSVYVGENKDRLVKMSR-DVEMYANRSYKE-IPSADDFAKQYDIAIIPGGGLGAKTLSTT
+PFVQQVVKEFYKKPNKWIGMICAGTL-TAKTSGL-PNKQITGHPSVRGQLEEG-GYKYLD
+QP-VVLEENLITSQGPGTAMLFGLKLLEQVASKDKYNAVYK-SLSMP---
+>gi|15232455|ref|NP_188117.1| protein DJ-1-like A [Arabidopsis thaliana]
+----------------------------------------------------MAS-FTKT
+VLIPIAHGTEPLEAVAMITVLRRGGADVTVASVE---TQVGV--DACHGIKMVADTLLSD
+ITDSVFDLIVLPGGLPGGETLKNCKSLENMVKKQDSDGRLNAAICCAPALALGTWGLLEG
+KKATGYPVFMEKLAATCATAVESRVQIDGRIVTSRGPGTTIEFSITLIEQLFGKEKADEV
+SSILLLRPNPGEEFTFTELNQTNWSFEDTPQILVPIAE-ESEEIEAIALVDILRRAKANV
+--VIAAVGNSLEVEGSR-KAKLVAEVLLDE-VAE-----KSFDLIVLPGGLNGAQRFASC
+EKLVNMLRK-QAEANKPYGGICASPAYVFEPNGLLKGKKATTHPVVSDKLSDK---SHIE
+HR-VVVDGNVITSRAPGTAMEFSLAIVEKFYGREKALQLGKATLV-----
+>gi|18404397|ref|NP_564626.1| DJ1-like protein B [Arabidopsis thaliana]
+-----MASSSLCHRYFNKITVTPFFNTKKLHHYSPRRISLRVNRRSFSISATMSS-STKK
+VLIPVAHGTEPFEAVVMIDVLRRGGADVTVASVE---NQVGV--DACHGIKMVADTLLSD
+ITDSVFDLIMLPGGLPGGETLKNCKPLEKMVKKQDTDGRLNAAICCAPALAFGTWGLLEG
+KKATCYPVFMEKLAA-CATAVESRVEIDGKIVTSRGPGTTMEFSVTLVEQLLGKEKAVEV
+SGPLVMRPNPGDEYTITELNQVSWSFEGTPQILVPIAD-GSEEMEAVAIIDVLKRAKANV
+--VVAALGNSLEVVASR-KVKLVADVLLDE-AEK-----NSYDLIVLPGGLGGAEAFASS
+EKLVNMLKK-QAESNKPYGAICASPALVFEPHGLLKGKKATAFPAMCSKLTDQ---SHIE
+HR-VLVDGNLITSRGPGTSLEFALAIVEKFYGREKGLQLSKATLV-----
+>gi|297596332|ref|NP_001042407.2| Os01g0217800 [Oryza sativa Japonica Group]
+MAMAAASASAMARRAASW----------------PRLLLL---SRAFA----AAAAEPKR
+VLVPVADGTEPVEAAATADVLNRAGARVTVATADPAGDDRGLLVEAAFGVKLVADGRVAD
+LEGEAFDLIALPGGMPGSANLRDCKVLEKMVKKQAEQGGLYAAICATPAVTLAHWGLLKG
+LKATCYPSFMEKFTA-EIIPVNSRVVVDRNAVTSQGPATAIEYALALVEQLYGKEKSEEV
+AGPLYVRPQPGVDYVIDEFNSVEWKCSGTPQVLVPVAN-GSEEMEALNLIDILRRAGANV
+--TVASVEDKLQVVTRRHKFNLIADIMVEE-AAK-----REFDLIVMPGGLPGAQKLSST
+KVLVDLLKK-QAESNKPYGAICASPAYVLEPHGLLKGKKATSFPPMAHLLTDQ---SACD
+SR-VVVDGNLITSKAPGSATEFALAIVEKLFGREKAVSIAK-ELIFM---
+>gi|297605951|ref|NP_001057783.2| Os06g0531200 [Oryza sativa Japonica Group]
+----------------------------------------------------MASPPAKK
+VLVPIASGTEPMEAVITVDVLRRAGADVSVASVDPGSAQVG----GAWGVKLAADALLDD
+LADAEFDLISLPGGMPGSSNLRDCKLLENMVKKHAGKGKLYAAICAAPAVALGSWGLLNG
+LKATCYPSFMDKLPS-EVNAVESRVQIDGNCVTSRGPGTAMEYSVVLVEQLYGKEKADEV
+AGPMVMRPQHGVEFSLKELNSTSWNVGETPQILVPIAN-GTEEMEATMIIDILRRAKANV
+--VVASLEETLEIVASR-KVKMVADVLLDD-ALK-----QQYDLILLPGGLGGAQAYAKS
+DKLIGLIKK-QAEANKLYGAICASPAIALEPHGLLKGKKATSFPGMWNKLSDQ---SECK
+NR-VVVDGNLITSQGPGTSMEFSLAIVEKLFGRERAVELAK-TMVFM---
+>gi|62752059|ref|NP_001015851.1| parkinson protein 7 [Xenopus (Silurana) tropicalis]
+------------------------------------------------------------
+------------------------------------------------------------
+-----------------------------MAGKRA-------------------------
+------------------------------------------------------------
+--------------------------------LLILAK-GAEEMETVIPADVMRRAGIKV
+--TIAGLSGKDPVLCSR-DVVLCPDTSLEEARTQ-----GPYDVVVLPGGNLGAQNLSES
+PVVKEVLKE-QEAKNGLIAAICAGPT-ALTVHGVGIGKTITTHPLAKDKIVNADHYKYSE
+ER-VVKDGNFITSRGPGTSFEFALMIVSTLVGKEVADQVKS-PLLLKD--
