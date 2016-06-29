@@ -190,6 +190,7 @@
 
 - 例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
   - この例の場合、オレンジ-赤で示された遺伝子は発現が増え、青-紫で示された遺伝子は発現が減っています
+
 ![biocyc15](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc15.png)
 
 - 時間が余った人は、いろいろなオプション（アニメーション、テーブル出力など）を試してみましょう
@@ -217,10 +218,10 @@
 - 左のパスウェイのリスト、右のパスウェイマップが連動していて、下層になると分子間相互作用を表したダイアグラムが表示されます
 - 全体表示とダイアグラム表示はアイコンで切り替えられます
 
-![reactome3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome3.png)
-![reactome4](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome4.png)
+![reactome3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome3.png)
+![reactome4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome4.png)
 
-  - Reactome には代謝パスウェイの他に制御系も含むため、ノードとエッジの関係が複数ある
+- Reactome には代謝パスウェイの他に制御系も含むため、ノードとエッジの関係が複数あります
 - ![reactome5](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome5.png)
 
 #### 実習 2-2. パスウェイをハイライトさせてみよう  
