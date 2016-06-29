@@ -69,8 +69,8 @@
         - 本講習中、本家サイトが繋がらない時は、統合TVのYouTube版を見ればおおよその内容がわかるようになっています。
         - 今回の講習に関連する内容の多くは、「発現解析」タグのついた動画にあります。
         - 過去の講習会の内容はそのほとんどが統合TVに収録されており、いつでもどこでも繰り返し復習できるようになっています。
-    - お探しの動画が見つからない or 統合TV未掲載の場合は、[統合TV番組リクエストフォーム](http://togotv.dbcls.jp/ja/contact.html)へどうぞ!!
-    - 統合TVを作ってくれる方、募集中です。
+    - お探しの動画が見つからない or 統合TV未掲載の場合は、[統合TV番組リクエストフォーム](http://togotv.dbcls.jp/ja/contact.html)へどうぞ!
+    - [統合TVを作ってくれる方、募集中!!](https://twitter.com/bonohu/status/747954940157399040)
 
 ----
 
@@ -279,17 +279,16 @@
 
 ## 数十～数千の遺伝子群の生物学的解釈 
 ### [DAVID: The Database for Annotation, Visualization and Integrated Discovery](http://david.abcc.ncifcrf.gov/)
-- マイクロアレイデータの生物学的な解釈
-- マイクロアレイ実験の一般的な目的は、実験条件によって得られた数十～数千の遺伝子群の発現が生物学的にどういう意味を持つかを考えることです。
+- マイクロアレイやRNA-seqデータの生物学的な解釈
+- マイクロアレイやRNA-seq、すなわち遺伝子発現解析の一般的な目的は、実験条件によって得られた数十～数千の遺伝子群の発現が生物学的にどういう意味を持つかを考えることです。
 
 [![Gyazo](http://i.gyazo.com/52cb4c40b1313a52f8ded6923bdd8ef0.png)](http://gyazo.com/52cb4c40b1313a52f8ded6923bdd8ef0)
 
-- 今回は、その方法の一つとして、マイクロアレイの結果に[Gene Ontology](http://www.google.co.jp/url?sa=t&source=web&cd=4&ved=0CEEQFjAD&url=http%3A%2F%2Fja.wikipedia.org%2Fwiki%2F%25E9%2581%25BA%25E4%25BC%259D%25E5%25AD%2590%25E3%2582%25AA%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25AD%25E3%2582%25B8%25E3%2583%25BC&ei=ve9QTd6XMtG6cbeW1KUH&usg=AFQjCNF8U-O4ktlMGoR9DNC0wKltmbjtmw)の用語を付与することで、生物学的な解釈を行います。
+- 今回は、その方法の一つとして、遺伝子リストにある遺伝子群に機能アノテーション(Gene Ontologyなど)を付与し、生物学的な解釈を行います。
 
-#### マイクロアレイデータの準備
-- サンプルデータとして、公共の遺伝子発現データ群を用います。このデータは、ある刺激前後の2群間で発現増加した実験が10回以上あった遺伝子群のリストです。  
-  
-     → [マル秘遺伝子リスト](https://raw.githubusercontent.com/AJACS-training/AJACS60/master/bono1/affy10.txt)  （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
+#### 遺伝子リストの準備
+- サンプルデータとして、公共遺伝子発現データベースからメタ解析してえた遺伝子リストを用います。この遺伝子リスト``affy10.txt``は、ある刺激前後の2群間で発現増加した実験が10回以上あった遺伝子群のリストです。  
+     → [``affy20.txt``](https://raw.githubusercontent.com/AJACS-training/AJACS60/master/bono1/affy10.txt)  （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
   
 - このデータは、どのような実験から得られたデータなのか、どのように解釈できるのかをDAVIDを使って考察してみましょう！  
 
@@ -322,7 +321,9 @@
 [![https://gyazo.com/5151d788f211b25072d3192ef6a3e469](https://i.gyazo.com/5151d788f211b25072d3192ef6a3e469.png)](https://gyazo.com/5151d788f211b25072d3192ef6a3e469)
 
 13. 複数のツールで得られた結果を踏まえ、「ある実験」とはどのような実験であったか考察してみましょう。
- - マル秘遺伝子リストは「ある刺激前後の2群間で発現が1.5倍以上上昇した実験が10回以上あった遺伝子群のリスト」  
- - 生物種はHomo sapiens
+ - ``affy10.txt``は「ある刺激前後の2群間で発現が1.5倍以上上昇した実験が10回以上あった遺伝子群のリスト」  
+
+14. 早く終わった方は、さらに20回以上発現上昇があった遺伝子群のリスト、[``affy20.txt``](https://raw.githubusercontent.com/AJACS-training/AJACS60/master/bono1/affy20.txt) （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください）で同じデータ解析をやってみましょう。10回以上のリストと比べてどういった違いがみられるでしょうか?
+	- このようにいろいろな閾値を試して、結果を見て考察し、最終的な閾値としております(例: Table 4. Gene Set Enrichment Analysis of up/down-regulated genes after UV irradiation.[DOI: 10.1371/journal.pone.0116007.t004](http://dx.doi.org/10.1371/journal.pone.0116007.t004))
   
 ---
