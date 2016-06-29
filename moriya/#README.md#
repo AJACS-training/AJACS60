@@ -186,13 +186,12 @@
   - Use data form: Ratio of two columns を選択
   - Numerator Column, Denominator Column を一つづつ選択
 
-例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
 ![biocyc14](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc14.png)
 
 例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
 ![biocyc15](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc15.png)
 
-- 時間が余った人は、いろいろなオプシオンを試してみましょう
+- 時間が余った人は、いろいろなオプションを試してみましょう
 
 もっと詳しく知りたい場合は [BioCyc User's guide](http://biocyc.org/PToolsWebsiteHowto.shtml) を参照しましょう
 
