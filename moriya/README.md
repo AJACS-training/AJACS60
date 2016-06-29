@@ -175,24 +175,24 @@
 ![biocyc12](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc12.png)
 
 #### 実習 1-5. 遺伝子発現データをマッピングしてみよう
-- NCBI GEO (Gene Expression Omnibus)のデータを直接まっイングできる
+- NCBI GEO (Gene Expression Omnibus)のデータを直接マッピングできます
 - 右のメニューの Import Data from GEO をクリック
 
 ![biocyc13](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc13.png)
 
-- キーワード検索で GEO のデータを検索し、データを一つ選択
+- キーワード検索で GEO のデータを検索し、データを一つ選択（例：O157)
 - マッピングオプション例
   - Type of display: Static (single timepoint)を選択
   - Use data form: Ratio of two columns を選択
   - Numerator Column, Denominator Column を一つづつ選択
 
-例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
 ![biocyc14](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc14.png)
 
-例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
+- 例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
+  - この例の場合、オレンジ-赤で示された遺伝子は発現が増え、青-紫で示された遺伝子は発現が減っています
 ![biocyc15](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc15.png)
 
-- 時間が余った人は、いろいろなオプシオンを試してみましょう
+- 時間が余った人は、いろいろなオプション（アニメーション、テーブル出力など）を試してみましょう
 
 もっと詳しく知りたい場合は [BioCyc User's guide](http://biocyc.org/PToolsWebsiteHowto.shtml) を参照しましょう
 
@@ -206,14 +206,20 @@
 - 利用：フリー
 - データ形式：BioPAX, SBML
 
-![reactome1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome1.png)
+![reactome1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome1.png)
 
 #### 実習 2-1. 好きな生物のパスウェイを見てみよう  
 - [Browse Pathways](http://www.reactome.org/PathwayBrowser/) ボタンをクリック
 - 初期画面はヒトのパスウェイなので、好きな種を選択
-- ![reactome2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome2.png)
-- 左のパスウェイのリスト、右のパスウェイマップが連動
-  - 下層になると、ダイヤグラムが表示される
+
+![reactome2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome2.png)
+
+- 左のパスウェイのリスト、右のパスウェイマップが連動していて、下層になると分子間相互作用を表したダイアグラムが表示されます
+- 全体表示とダイアグラム表示はアイコンで切り替えられます
+
+![reactome3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome3.png)
+![reactome4](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome4.png)
+
   - Reactome には代謝パスウェイの他に制御系も含むため、ノードとエッジの関係が複数ある
 - ![reactome5](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome5.png)
 
