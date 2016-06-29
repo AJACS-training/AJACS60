@@ -57,7 +57,13 @@
 ### 多重配列アラインメント
 
 - Jalview http://www.jalview.org
-
+	- DesktopとApplet版がありますが、Desktop版をインストールしましょう。
+	- 例として、さまざまな生物種で *PARK7*(*DJ-1*)のタンパク質配列([``PARK7.fa``](https://raw.githubusercontent.com/AJACS-training/AJACS60/master/bono2/PARK7.fa))を File -> Input Alignment -> From File から読み込んでみましょう。
+	- 読み込んで現れたWindowの中のメニューの Web Service -> Alignment -> ClustalO -> withDefaults を選ぶと多重配列アラインメントが!
+	- Calculate -> Calculate Tree -> Neighbor Joining Using... を選ぶと系統樹が!
+		- 配列名がIDばかりで無味乾燥?[``PARK7.out2.fa``](https://raw.githubusercontent.com/AJACS-training/AJACS60/master/bono2/PARK7.out2.fa))を代わりの読み込んでみると…
+- 【復習用 統合TV】 [Jalviewを使って配列解析・系統樹作成をする2013](http://doi.org/10.7875/togotv.2013.049) 
+  
 ### ゲノムブラウザ
 
 - UCSC Genome Browser http://genome.ucsc.edu/
