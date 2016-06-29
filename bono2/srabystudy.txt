@@ -1,0 +1,5 @@
+genome	22454
+transcriptome	4915
+metagenome	2757
+epigenome	1588
+cancer	51

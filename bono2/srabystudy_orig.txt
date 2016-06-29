@@ -1,0 +1,13 @@
+Whole Genome Sequencing	27157
+Other	10274
+Transcriptome Analysis	5901
+Metagenomics	4154
+Epigenetics	1914
+Population Genomics	636
+Exome Sequencing	129
+RNASeq	127
+Cancer Genomics	66
+Resequencing	54
+Pooled Clone Sequencing	43
+Gene Regulation Study	10
+Synthetic Genomics	8

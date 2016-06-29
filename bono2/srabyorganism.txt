@@ -1,0 +1,16 @@
+Homo sapiens	278383
+Not available	77135
+Mus musculus	65697
+human gut metagenome	28510
+Oryza sativa	28059
+Plasmodium falciparum	20197
+Streptococcus pneumoniae	19693
+Staphylococcus aureus	19576
+human metagenome	17524
+Danio rerio	16343
+Saccharomyces cerevisiae	14524
+soil metagenome	13368
+Drosophila melanogaster	11528
+Mycobacterium tuberculosis	8696
+Anopheles gambiae	8469
+Others	353963
