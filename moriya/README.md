@@ -39,7 +39,7 @@
 パスウェイとは、生体内での遺伝子やタンパク質、その他の化合物等の分子間相互作用を "経路" として表現したものです。相互作用の知識を集積して可視化、電子化したものがパスウェイデータベースと呼ばれています。歴史的には、代謝経路の表現から始まりました
 
 - [ベーリンガーマンハイム社（現ロシュ社）の代謝マップ](http://www.roche.com/sustainability/what_we_do/for_communities_and_environment/philanthropy/science_education/pathways.htm) (1965~)
-- 最初は紙媒体での出版。のちに[電子化](http://biochemical-pathways.com/)されました
+- 最初は紙媒体での出版。のちに[電子化](http://biochemical-pathways.com/)されています
 
 ![pathway1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathway1.png)
 
@@ -87,41 +87,38 @@
 
 #### パスウェイデータベースのデータ形式
 計算機での取り扱いを目的として XML (Extensible Markup Language) で記述されていることが多くなっています
-- BioPAX (Biological Pathways Exchange) は静的なマップ表現するための形式
-  - Level 1：代謝パスウェイ
-  - Level 2：タンパク質間相互作用
-  - Level 3：シグナル伝達
-- SBML (Systems Biology Markup Language)、CellML、CSML (Cell System Markup Language) は kinetics も取り扱えるため、シミュレーションなどで利用可能な形式
-- PSI-MI (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述するための形式
-- KGML (KEGG Markup Language) は KEGG 独自のフォーマット
+- [KGML](http://www.genome.jp/kegg/xml/docs/) (KEGG Markup Language) は分子間の関係とダイアグラムのレイアウトを取り扱うための KEGG 独自のフォーマット
+- [SBML](http://sbml.org/Main_Page) (Systems Biology Markup Language)、[CellML](https://www.cellml.org/)、[CSML](http://www.csml.org/) (Cell System Markup Language) はパスウェイのシミュレーションやモデリングのためのフォーマット
+- [PSI-MI](http://www.psidev.info/node/60) (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述するためのフォーマット
+- [BioPAX](http://www.biopax.org/) (Biological Pathways Exchange) は様々なパスウェイデータを統合したり、データ交換を行うことを目的として策定された標準フォーマット
 
-
-どのパスウェイデータベースを解析に使えば良いかは、対象生物や対象パスウェイ、目的によって異なる  
-ここでは BioCyc, Reactome, KEGG PATHWAY を紹介する
+どのパスウェイデータベースを研究に使えば良いかは、対象生物や対象パスウェイ、目的によって異なってきます  
+ここでは BioCyc, Reactome, KEGG PATHWAY を紹介します
 
 ----
 ## BioCyc
 - ウェブサイト：http://biocyc.org/
 - 開発：SRIインターナショナル（Stanford Research Institute）
-- 対象：大腸菌からヒトまで、7,600 種以上
+- 対象：大腸菌からヒトまで、異株を含めて 7,600 種以上
   - 専門家が手作業で作成した文献ベースのデータ＋自動ツール
-  - 代謝パスウェイのみ（一部、シグナル伝達系）
+  - 代謝パスウェイ（一部、遺伝子制御系）
 - 利用：アカデミックフリー
 - データ形式：BioPAX
 
-![biocyc1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc1.png)
+![biocyc1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc1.png)
 
 
-#### 対象生物種を見てみよう  
+#### 実習 1-1. 対象生物種を見てみよう  
 - http://biocyc.org/biocyc-pgdb-list.shtml
-  - 種毎の Database
-    - Tier 1：専門家が手作業で作成した文献ベースのデータ
-    - Tier 2：自動ツールで作成したデータを手作業で修正
-    - Tier 3：自動ツールで作成
-  - MetaCyc だけは 2,000 種以上から構築
+- データベースには３つのレベルがあります
+  - Tier 1：専門家が手作業で作成した文献ベースのデータ (7 DBs)
+  - Tier 2：自動ツールで作成したデータを手作業で修正 (>40 DBs)
+  - Tier 3：自動ツール (>7,500 DBs)
+- MetaCyc だけは 生物種のデータベースではなく、2,000 種以上から構築したリファレンス代謝パスウェイ
 
+![biocyc2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc2.png)
 
-#### 好きな生物のパスウェイを見てみよう
+#### 実習 1-2. 好きな生物のパスウェイを見てみよう
 - 好きな生物種をクリック（例： [EcoCyc](http://biocyc.org/ecocyc/index.shtml)）
 - 右上の検索ボックスで "glycolysis" や "tca" などの生命現象関連の単語を入力し、Quick Search ボタンをクリック
 - ![biocyc6](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc6.png)
@@ -132,19 +129,19 @@
 - ![biocyc3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc3.png)
 
 
-#### 種間比較をしてみよう
+#### 実習 1-3. 種間比較をしてみよう
 - 右の Option メニューの [Species Comparison](http://ecocyc.org/compare-frame-in-orgs?type=PATHWAY&object=GLYCOLYSIS&initial-orgs=(ECOLI)&detail-level=1) をクリック
 - 比較する種の選択画面が表示されるので、比較したい好きな種を入力し、OK をクリック
 - ![biocyc7](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc7.png)
 - パスウェイや遺伝子、オペロン構造などが比較できる
 
 
-#### 好きな生物の Overview パスウェイを見てみよう  
+#### 実習 1-4. 好きな生物の Overview パスウェイを見てみよう  
 - 右の Option メニューの [Show on Cellular Overview](http://ecocyc.org/overviewsWeb/celOv.shtml?orgid=ECOLI&pnids=GLYCOLYSIS) をクリック
 - ![biocyc2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc2.png)
 
 
-### サンプル・データをマッピングしてみよう  
+### 実習 1-5. サンプル・データをマッピングしてみよう  
 - 右のメニューの Overlay Experimental Data ＞ Upload Data from File
 - 出てきた入力フォームのファイルアップロード部のすぐ下の (or "paste data" directly into form) のリンクをクリック
 - ![biocyc4](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc4.png)
@@ -166,7 +163,7 @@
 
 ![reactome1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome1.png)
 
-#### 好きな生物のパスウェイを見てみよう  
+#### 実習 2-1. 好きな生物のパスウェイを見てみよう  
 - [Browse Pathways](http://www.reactome.org/PathwayBrowser/) ボタンをクリック
 - 初期画面はヒトのパスウェイなので、好きな種を選択
 - ![reactome2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome2.png)
@@ -175,11 +172,11 @@
   - Reactome には代謝パスウェイの他に制御系も含むため、ノードとエッジの関係が複数ある
 - ![reactome5](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome5.png)
 
-#### パスウェイをハイライトさせてみよう  
+#### 実習 2-2. パスウェイをハイライトさせてみよう  
 - マップ左上の虫眼鏡アイコンをクリックして、 "glycolysis" や "tca" などの生命現象関連の単語を入力すると、候補がリストアップされるので選択
 - ![reactome3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome3.png)
 
-#### サンプル・データをマッピングしてみよう
+#### 実習 2-3. サンプル・データをマッピングしてみよう
 - サンプルがヒトしか無いので、ヒトのパスウェイに移動
 - 上、右側の Analysis: アイコンをクリック
 - ファイルアップロード部のすぐ下の click here to paste your data... をクリック
@@ -190,7 +187,7 @@
     - 再生ボタンで、複数のカラムのデータを連続表示
 - ![reactome6](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome6.png)
 
-#### 種間比較をしてみよう
+#### 実習 2-4. 種間比較をしてみよう
 - Analysis tools から Species Comparison を選択
 - ヒトとその他の生物のパスウェイ比較が可能
 
@@ -226,7 +223,7 @@
   - [AJACS54](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=AJACS2015_muto_handout_.pdf&refer=AJACS54)
 
 
-#### 対象生物種を見てみよう
+#### 実習 3-1. 対象生物種を見てみよう
 - データベースのテーブルの下、[KEGG organisms](http://www.kegg.jp/kegg/catalog/org_list.html) をクリック
   - KEGG では 3-4 文字の独自の生物種コードを使用している
   - 生物種コードのリンクをクリックすると、種の情報のページに飛ぶ
@@ -237,7 +234,7 @@
   - 真核生物のドラフトゲノムのリストで、ここは生物種コードではなくT番号で管理されている
 - [Meta](http://www.genome.jp/kegg/catalog/org_list3.html) はメタゲノム
 
-#### パスウェイマップを見てみよう  
+#### 実習 3-2. パスウェイマップを見てみよう  
 - [トップページ](http://www.kegg.jp) 上方の検索ボックスで "glycolysis" や "tca" などの生命現象関連の単語を入力し、Search ボタンをクリック
 - ![kegg4](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg4.png)
 - KEGG データベース全体でヒットしたエントリーが全てリストアップされ、KEGG PATHWAY にヒットがあれば、一番上に表示されるのでクリック
@@ -246,7 +243,7 @@
   - ボックスが遺伝子やタンパク質などの配列情報、丸が代謝産物、環境物質などの化合物
   - 右上の Help でそれぞれの図形の意味を見てみよう
 
-#### 好きな生物のパスウェイを見てみよう
+#### 実習 3-3. 好きな生物のパスウェイを見てみよう
 - プルダウンメニューから好きな生物を選択して Go をクリック
   - 多すぎて選びにくい場合
   - &lt; Sort below by alphabet &gt; を選択して Go をクリックでリストをソート
@@ -264,18 +261,18 @@
 ![kegg3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg3.png)
 
 
-#### Overview マップを見てみよう  
+#### 実習 3-4. Overview マップを見てみよう  
 - http://www.kegg.jp/kegg/pathway.html
 - 1.0 Global and overview maps の [Metabolic pathways](http://www.kegg.jp/kegg-bin/show_pathway?map01100) をクリック
   - 右の [[KEGG Atlus](http://www.kegg.jp/kegg/atlas/?01100)] は Java で動くビューワーで、自由度が少し高い分、動作が重たい
 - 左にモジュールのリスト（KEGG におけるパスウェイの小さい機能単位）、右にマップが表示
 - 機能単位毎にパスウェイを強調表示できる
 
-#### 生物種毎の Overview マップを見てみよう  
+#### 実習 3-5. 生物種毎の Overview マップを見てみよう  
 - プルダウンメニューから生物を選択し、Go をクリック
 - 生物の持っていない経路は灰色になる
 
-#### ヒトの疾患パスウェイを見てみよう
+#### 実習 3-6. ヒトの疾患パスウェイを見てみよう
 - http://www.genome.jp/kegg/pathway.html#disease
 - がん、免疫系疾患、神経変性疾患など多因子性の疾患
 - 好きな疾患パスウェイをクリック（例：[大腸がん](http://www.genome.jp/kegg-bin/show_pathway?hsa05210)）
@@ -284,7 +281,7 @@
   - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子
   - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子
 
-#### 種間比較をしてみよう
+#### 実習 3-7. 種間比較をしてみよう
 - http://www.genome.jp/kegg/kegg2.html
 - KEGG for pangenomes or genome comparison/combination のテキストボックスに "eco ecs" と入力して Go をクリック
   - eco：非病原性大腸菌 k-12
@@ -305,7 +302,7 @@
 ３種以上の比較も可能  
 
 
-#### 配列 ID を KEGG の遺伝子 ID に変換しよう
+#### 実習 3-8. 配列 ID を KEGG の遺伝子 ID に変換しよう
 遺伝子 ID やタンパク質 ID を使ってパスウェイにマッピングしたいが KEGG のウェブサイトでは KEGG 遺伝子 ID が必要な場合もある  
   - [Link DB](http://www.genome.jp/linkdb/)
     - データベースエントリー ID 間のリンク情報を収集したデータベース
@@ -316,7 +313,7 @@
   - ![linkdb2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb2.png)
 
 
-#### サンプル・データをマッピングしてみよう
+#### 実習 3-9. サンプル・データをマッピングしてみよう
 - [KEGG Mapper](http://www.kegg.jp/kegg/mapper.html)
 - Pathway mapping tool の２番目の [Search&Color Pathway](http://www.kegg.jp/kegg/tool/map_pathway2.html) をクリック
 - テキストエリア右の Examples: を選択して Exec ボタンをクリック
@@ -367,7 +364,7 @@
 [Color Pathway WebGL](http://www.kegg.jp/kegg/tool/map_pathway3a.html) も使ってみよう  
 - Example: を使って、どんな絵になるか試してみましょう
 
-#### KEGG データベースにはない遺伝子をマッピングしてみよう
+#### 実習 3-10. KEGG データベースにはない遺伝子をマッピングしてみよう
 KEGG に登録されている配列データと類似性を計算し、自動で遺伝子機能を推定、パスウェイへのマッピングを行う  
 
 - [KAAS](http://www.genome.jp/tools/kaas/)
@@ -450,7 +447,7 @@ Linux, Mac OS X のターミナル
   - コピペ、もしくはアップロード
   - Exec ボタンをクリック
 
-#### KEGG REST API を使ってデータをダウンロードしてみよう
+#### 実習 4 KEGG REST API を使ってデータをダウンロードしてみよう
 KEGG では FTP などで一括したデータのダウンロードはできないが、便利な API が容易されている
 - http://www.kegg.jp/kegg/rest/keggapi.html
 
