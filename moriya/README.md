@@ -328,17 +328,24 @@
 
 #### 実習 3-2. パスウェイマップを見てみよう  
 - [トップページ](http://www.kegg.jp) 上方の検索ボックスで "lysine biosynthesis" や "glycolysis" やなどの生命現象関連の単語を入力し、Search ボタンをクリック
-- KEGG データベース全体でヒットしたエントリーが全てリストアップされ、KEGG PATHWAY にヒットがあれば、一番上に表示されるのでクリック
-- パスウェイの情報が表示されるエントリーページに移動するので、マップ画像をクリック
 
 ![kegg6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg6.png)
+
+- KEGG データベース全体でヒットしたエントリーが全てリストアップされ、KEGG PATHWAY にヒットがあれば、一番上に表示されます
+
 ![kegg7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg7.png)
+
+- 各パスウェイの情報が表示されます
+  - KEGG におけるパスウェイの最小単位で、ダイアグラム画像を "マップ" と呼んでいます
+
 ![kegg8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg8.png)
-![kegg9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg9.png)
 
 - この色のついていない白いダイアグラムが、専門家が手作業で文献ベースから作成したリファレンスパスウェイになります
   - ボックスが遺伝子やタンパク質などの配列情報、丸が代謝産物、環境物質などの化合物
   - 各図形の説明は右上の Help から見られます
+  
+![kegg9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg9.png)
+
 
 #### 実習 3-3. 好きな生物のパスウェイを見てみよう
 - プルダウンメニューから好きな生物を選択して Go をクリック
