@@ -274,11 +274,12 @@
 ## KEGG PATHWAY
 - ウェブサイト：http://www.kegg.jp/
 - 開発：京都大学
-- 対象：ゲノムの決まった全生物種（異株を含む）4,200 種以上（>300真核生物、>3,700真性細菌、>220古細菌）
+- 対象：ゲノムの決まった全生物種（異株を含む）4,200 種以上（>300真核生物、>3,700真性細菌、>220古細菌）、真核ドラフトゲノム 25種、環境メタゲノム 300サンプル、生体メタゲノム 700サンプル
   - 専門家が手作業で作成した文献ベースのデータ＋自動ツール
-    - リファレンスパスウェイ：専門家が手作業で文献ベースから作成（BioCyc の Tier 1(MetaCyc)に相当）
-    - 種毎のパスウェイ（手動）：自動ツールで作成し、手作業でキュレーション（BioCyc の Tier 2 に相当）
-    - 種毎のパスウェイ（自動）：自動ツールで作成（Buicyc の Tier 3 に相当）
+    - リファレンスパスウェイ : 専門家が手作業で文献ベースから作成
+    - 生物種パスウェイ
+      - 自動ツールでリファレンスパスウェイから作成し、手作業でキュレーション
+      - 自動ツールで作成（自動ツールにも段階があります）
   - 代謝パスウェイ、シグナル伝達系、他
 - 利用：アカデミックフリー
 - データ形式：KGML
@@ -289,7 +290,7 @@
 
 #### KEGG はデータベースの集合
 - [KEGG2](http://www.kegg.jp/kegg/kegg2.html) をクリック
-- KEGG PATHWAY を含むシステム情報データベースの他に、遺伝情報、化学情報、健康情報などのデータベースがリンクしている
+- KEGG PATHWAY を含むシステム情報データベースの他に、遺伝情報、化学情報、健康情報などのデータベースがリンクしています
 
 ![kegg2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg2.png)
 
@@ -304,24 +305,40 @@
 - データベースのテーブルの下、[KEGG organisms](http://www.kegg.jp/kegg/catalog/org_list.html) をクリック
 
 ![kegg3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg3.png)
+![kegg4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg4.png)
 
-  - KEGG では 3-4 文字の独自の生物種コードを使用している
-  - 生物種コードのリンクをクリックすると、種の情報のページに飛ぶ
-  - "Annotation" が manual -> 手作業（hsa等）、KOALA -> 自動ツール（pps等）
-  - ![kegg5](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg5.png)	
+- KEGG では 3-4 文字の独自の生物種コードを使用している
+- 生物種コードのリンクをクリックすると、種の情報が表示されます
+  - Annotation
+    - manual : 手作業によるアノテーション（ヒト(hsa)等）
+    - KOALA : SSEARCH ベースの自動ツールによるアノテーション（ゴリラ(ggo)等）
+    - BlastKOALA : BLAST ベースの自動ツールによるアノテーション（ドラフトゲノム）
+    - GhostKOALA : GhostX ベースの自動ツールによるアノテーション（メタゲノム）
+	
+![kegg5x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg5.png)	
 
-- 生物種リスト上の [Draft](http://www.kegg.jp/kegg/catalog/org_list1.html) をクリック
-  - 真核生物のドラフトゲノムのリストで、ここは生物種コードではなくT番号で管理されている
-- [Meta](http://www.genome.jp/kegg/catalog/org_list3.html) はメタゲノム
+- データベースリスト
+  - Genomes : 主に NCBI Refseq、GenBank に登録された生物種
+  - Species : 異株を一つにまとめたデータベース
+  - Genus : Genus レベルでまとめたデータベース
+  - Draft : Genomes に入っていない真核生物
+  - Meta : メタゲノム
+
+![kegg5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg5.png)
 
 #### 実習 3-2. パスウェイマップを見てみよう  
-- [トップページ](http://www.kegg.jp) 上方の検索ボックスで "glycolysis" や "tca" などの生命現象関連の単語を入力し、Search ボタンをクリック
-- ![kegg4](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg4.png)
+- [トップページ](http://www.kegg.jp) 上方の検索ボックスで "lysine biosynthesis" や "glycolysis" やなどの生命現象関連の単語を入力し、Search ボタンをクリック
 - KEGG データベース全体でヒットしたエントリーが全てリストアップされ、KEGG PATHWAY にヒットがあれば、一番上に表示されるのでクリック
 - パスウェイの情報が表示されるエントリーページに移動するので、マップ画像をクリック
-  - この色のついていない白いパスウェイマップが、専門家が手作業で文献ベースから作成したリファレンスパスウェイ
+
+![kegg6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg6.png)
+![kegg7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg7.png)
+![kegg8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg8.png)
+![kegg9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg9.png)
+
+- この色のついていない白いダイアグラムが、専門家が手作業で文献ベースから作成したリファレンスパスウェイになります
   - ボックスが遺伝子やタンパク質などの配列情報、丸が代謝産物、環境物質などの化合物
-  - 右上の Help でそれぞれの図形の意味を見てみよう
+  - 各図形の説明は右上の Help から見られます
 
 #### 実習 3-3. 好きな生物のパスウェイを見てみよう
 - プルダウンメニューから好きな生物を選択して Go をクリック
@@ -467,7 +484,7 @@ BlastKOALA を使ったパスウェイへのマッピング
   - 新たに開いたウィンドウで、Buchnera を探し、Taxonomy番号をクリック
 - ![kegg10](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg10.png)
 - Exec ボタンをクリック
-  - 数分待つ（[講習会用結果例](http://www.kegg.jp/kegg-bin/blastkoala_result?id=89320edbab9f63445b34881655fc019b4531d61f&passwd=FKPNLx&mode=mapper)）
+  - 数分待つ（[講習会用結果例](http://www.kegg.jp/kegg-bin/blastkoala_result?id=05542d03b7004212294ff162ef08683fbf16cfb7&passwd=7Q95jf&mode=mapper)）
   - Reconstruct Pathway から遺伝子がマッピングされたパスウェイを見ることができる
 - ![kegg11](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg11.png)
 
