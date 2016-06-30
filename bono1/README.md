@@ -216,7 +216,7 @@
 ----
 
 ####【実習3】RefExを使って、組織特異的遺伝子を検索する 
-- [【復習用】RefExの使い方](http://youtu.be/GC2gLzvF6t0)  
+- [【復習用 統合TV】RefExの使い方](http://doi.org/10.7875/togotv.2014.009)  
 
 1. http://refex.dbcls.jp/ を開きます。
 2. 画面中央の「組織特異的に発現する遺伝子を見る」の臓器アイコンにカーソルを合わせると、更に詳細な部位のアイコンが出るので、調べたい臓器（例として肝臓）をクリックします。  
@@ -264,17 +264,6 @@
 
 14. 自分の研究テーマに関連する、また興味のある遺伝子について検索してみましょう。
 
-----
-
-### [BioGPS](http://biogps.org/)
-- ヒト、マウス、ラットのさまざまな組織や細胞(株)における遺伝子発現プロファイルのデータベース
-
-- [BioGPS](http://biogps.org/)はAffymetrix社製のマイクロアレイであるGeneChipを用いたさまざまな組織や細胞(株)遺伝子発現プロファイルのデータベース。
-- 検索した遺伝子に対して、種々の外部データベースを横断検索することができるだけでなく、それらの設定を保存したり、表示方法を自由にカスタマイズすることができる「Gene annotation portal」。
-- 外部データベースには、Wikipedia(Gene Wiki)、著名な試薬会社の検索窓へのリンク集、pathway、Nature系DB、モデル生物DB、文献DBなど多種多様
-- マウスのエキソンアレイのデータから遺伝子のスプライシングバリアント(Splicing variant)の発現状況も調べることが可能。最近ではCircadian関係のデータも。
-- さらに最近のアップデートで、NCBI Gene Expression Omnibus (GEO)中から選抜されたデータセットに切り替えて発現状況を調べることが可能に。
-
 ---- 
 
 ## 数十～数千の遺伝子群の生物学的解釈 
@@ -293,8 +282,8 @@
 - このデータは、どのような実験から得られたデータなのか、どのように解釈できるのかをDAVIDを使って考察してみましょう！  
 
 ####【実習4】DAVIDを用いて、発現データの結果を生物学的に解釈する 
-- [【復習用】DAVIDを使ってマイクロアレイデータを解析する 2012](http://doi.org/10.7875/togotv.2012.079)
-- [【復習用】DAVIDの使い方 実践編](http://doi.org/10.7875/togotv.2013.033)
+- [【復習用 統合TV】DAVIDを使ってマイクロアレイデータを解析する 2012](http://doi.org/10.7875/togotv.2012.079)
+- [【復習用 統合TV】DAVIDの使い方 実践編](http://doi.org/10.7875/togotv.2013.033)
 
 1. [DAVID6.8beta](https://david-d.ncifcrf.gov/home.jsp)の上部メニューの「Start Analysis」をクリックします。
 [![https://gyazo.com/35e1864ecb0c4567836b588004707628](https://i.gyazo.com/35e1864ecb0c4567836b588004707628.png)](https://gyazo.com/35e1864ecb0c4567836b588004707628)
@@ -326,4 +315,4 @@
 14. 早く終わった方は、さらに20回以上発現上昇があった遺伝子群のリスト、[``affy20.txt``](https://raw.githubusercontent.com/AJACS-training/AJACS60/master/bono1/affy20.txt) （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください）で同じデータ解析をやってみましょう。10回以上のリストと比べてどういった違いがみられるでしょうか?
 	- このようにいろいろな閾値を試して、結果を見て考察し、最終的な閾値としております(例: Table 4. Gene Set Enrichment Analysis of up/down-regulated genes after UV irradiation.[DOI: 10.1371/journal.pone.0116007.t004](http://dx.doi.org/10.1371/journal.pone.0116007.t004))
   
----
+
