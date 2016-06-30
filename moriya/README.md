@@ -255,20 +255,15 @@
 ![reactome10](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome10.png)
 
 
-- 例）Microarray data : 発現解析 (ORA)
+- 例）Microarray data : 発現解析
   - 色は発現データの値
   
 ![reactome11](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome11.png)
 
-- 右のサンプルをクリックして GO ボタンをクリック
-  - ID リストの場合は Over-representation 解析 (ORA）, Enrichment 解析
-  - ID と数値のリストの場合は発現解析
-    - 再生ボタンで、複数のカラムのデータを連続表示
-- ![reactome6](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome6.png)
 
-#### 実習 2-4. 種間比較をしてみよう
-- Analysis tools から Species Comparison を選択
-- ヒトとその他の生物のパスウェイ比較が可能
+- 種間比較をしてみよう
+  - Analysis tools から Species Comparison を選択
+  - ヒトとその他の生物のパスウェイ比較が可能
 
 詳細は [Reactome User's Guide](http://wiki.reactome.org/index.php/Usersguide) を参照  
 
@@ -279,7 +274,7 @@
 ## KEGG PATHWAY
 - ウェブサイト：http://www.kegg.jp/
 - 開発：京都大学
-- 対象：ゲノムの決まった全生物種（真核生物、真性細菌、古細菌）4,000 種以上
+- 対象：ゲノムの決まった全生物種（異株を含む）4,200 種以上（>300真核生物、>3,700真性細菌、>220古細菌）
   - 専門家が手作業で作成した文献ベースのデータ＋自動ツール
     - リファレンスパスウェイ：専門家が手作業で文献ベースから作成（BioCyc の Tier 1(MetaCyc)に相当）
     - 種毎のパスウェイ（手動）：自動ツールで作成し、手作業でキュレーション（BioCyc の Tier 2 に相当）
@@ -290,12 +285,15 @@
   - [KCPAVS KEGG-XML converter](http://www.kcpavs.cidms.org/kcpavs-features/tools-and-utilities/kegg-xml-converter) などで代謝パスウェイ、シグナル伝達などの多くのパスウェイを標準形式 に変換可能
   - [KEGGscape] (http://apps.cytoscape.org/apps/keggscape) でネットワーク可視化ソフト Cytoscape に読み込み可能
 
-![kegg1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg1.png)
+![kegg1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg1.png)
 
 #### KEGG はデータベースの集合
 - [KEGG2](http://www.kegg.jp/kegg/kegg2.html) をクリック
 - KEGG PATHWAY を含むシステム情報データベースの他に、遺伝情報、化学情報、健康情報などのデータベースがリンクしている
-- ここでは PATHWAY 以外の詳細は省くので、それ以外の詳細は過去の AJACS 資料を参照
+
+![kegg2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg2.png)
+
+- 今回は PATHWAY 以外の詳細は省くので、それ以外の詳細は過去の AJACS 資料を参照
   - [AJACS50](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=140912AJACS50_kawano.pdf&refer=AJACS50)
   - [AJACS51](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=KEGG_2014_12_slide.pdf&refer=AJACS51)、[付録資料](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=KEGG_2013_11.pdf&refer=AJACS51)
   - [AJACS53](https://github.com/AJACS-training/AJACS53/tree/master/skwsm)
@@ -304,6 +302,9 @@
 
 #### 実習 3-1. 対象生物種を見てみよう
 - データベースのテーブルの下、[KEGG organisms](http://www.kegg.jp/kegg/catalog/org_list.html) をクリック
+
+![kegg3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg3.png)
+
   - KEGG では 3-4 文字の独自の生物種コードを使用している
   - 生物種コードのリンクをクリックすると、種の情報のページに飛ぶ
   - "Annotation" が manual -> 手作業（hsa等）、KOALA -> 自動ツール（pps等）
