@@ -111,8 +111,9 @@
 【発展2】 さらに、UCSC Genome Browserのサーバー上ではなく、外部で管理されているデータをゲノムブラウザ上に表示することもできます。上部のメニューの My Data の中にあるTrack Hubsをクリックした画面で``cancer``で検索すると以下の様な外部データが利用可能とわかります。
 [![https://gyazo.com/0b434ffd362d5f9a846c1de2632a2c4c](http://i.gyazo.com/0b434ffd362d5f9a846c1de2632a2c4c.png)](https://gyazo.com/0b434ffd362d5f9a846c1de2632a2c4c)
 
-	- 【復習用 統合TV】[UCSC Genome Browserの使い方～配列取得編～2013](http://doi.org/10.7875/togotv.2013.087)
-	- [【復習用】UCSC Genome Browserの使い方〜表示+ENCODE編〜 2012(統合TV)](http://togotv.dbcls.jp/ja/20120528.html)
+- 【復習用 統合TV】
+	- [UCSC Genome Browserの使い方～配列取得編～2013](http://doi.org/10.7875/togotv.2013.087)
+	- [UCSC Genome Browserの使い方〜表示+ENCODE編〜 2012(統合TV)](http://doi.org/10.7875/togotv.2012.058)
 
 - Ensembl Genome Browser http://www.ensembl.org/
 - IGV(Integrative Genomics Viewer) https://www.broadinstitute.org/igv/
