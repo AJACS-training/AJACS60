@@ -111,7 +111,7 @@
 - 開発：SRIインターナショナル（Stanford Research Institute）
 - 対象：大腸菌からヒトまで、異株を含めて 7,600 種以上
   - 専門家が手作業で作成した文献ベースのデータ＋自動ツール
-  - 代謝パスウェイ（一部、遺伝子制御系）
+  - 代謝パスウェイ、制御系
 - 利用：アカデミックフリー
 - データ形式：BioPAX
 
@@ -139,11 +139,12 @@
 ![biocyc4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc4.png)
 
 - 代謝パスウェイが表示されます
+  - 代謝反応が青の矢印で、制御関係が灰色の矢印で示されている
   - More Detail ボタンをクリックすると、酵素名、代謝産物の構造などが追加される
 
 ![biocyc5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc5.png)
 
-- EcoCyc など一部の生物種では、代謝パスウェイに関わる遺伝子制御ネットワークも表示されます
+- EcoCyc など一部の生物種では、代謝パスウェイに関わる酵素の発現制御ネットワークも表示されます
 
 ![biocyc6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc6.png)
 
@@ -202,7 +203,8 @@
 - ウェブサイト：http://www.reactome.org/
 - 開発：EMBLE-EBI 他
 - 対象：ヒトを中心に脊椎動物、酵母、植物、19 種
-  - 専門家が手作業で作成した文献ベースのデータ（ヒト）
+  - ヒト：専門家が手作業で作成した文献ベースのデータ
+  - その他：計算機での推定（[参照](http://www.reactome.org/pages/documentation/electronically-inferred-events/))
   - 代謝パスウェイ、シグナル伝達系、他
 - 利用：フリー
 - データ形式：BioPAX, SBML
@@ -211,7 +213,8 @@
 
 #### 実習 2-1. 好きな生物のパスウェイを見てみよう  
 - [Browse Pathways](http://www.reactome.org/PathwayBrowser/) ボタンをクリック
-- 初期画面はヒトのパスウェイなので、好きな種を選択
+- 初期画面はヒトのパスウェイの全体像なので、好きな種を選択
+  - 全体像は分子間相互作用のダイアグラムではなく、小さく区分けされた各パスウェイのネットワーク図で表現されています
 
 ![reactome2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome2.png)
 
@@ -221,18 +224,42 @@
 ![reactome3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome3.png)
 ![reactome4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome4.png)
 
-- Reactome には代謝パスウェイの他に制御系も含むため、ノードとエッジの関係が複数あります
-- ![reactome5](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome5.png)
+- ダイアグラムの各オブジェクトの説明は右上のアイコンで見れます
 
-#### 実習 2-2. パスウェイをハイライトさせてみよう  
-- マップ左上の虫眼鏡アイコンをクリックして、 "glycolysis" や "tca" などの生命現象関連の単語を入力すると、候補がリストアップされるので選択
-- ![reactome3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome3.png)
+![reactome5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome5.png)
 
-#### 実習 2-3. サンプル・データをマッピングしてみよう
-- サンプルがヒトしか無いので、ヒトのパスウェイに移動
+- マップ左上の虫眼鏡アイコンをから、キーワード検索もできます
+
+![reactome6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome6.png)
+
+#### 実習 2-2. サンプル・データをマッピングしてみよう
+- サイトにサンプルデータが用意されているので、マッピングしてみる（ヒトのサンプルしか無いので、ヒトのパスウェイに移動）
 - 上、右側の Analysis: アイコンをクリック
-- ファイルアップロード部のすぐ下の click here to paste your data... をクリック
-- ![reactome4](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-reactome4.png)
+
+![reactome7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome7.png)
+
+- ファイルアップロードとデータペーストからパスウェイへのマッピングが可能です
+  - 今回はテキストボックス横のサンプルを選択して Continue
+
+![reactome8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome8.png)
+
+- Options
+  - Project to human : ヒト以外の生物種のデータをオーソログ推定を経て、ヒトのパスウェイにマッピング
+  - Include Interactors : IntAct 相互作用データベースの情報も加えてパスウェイにマッピング
+
+![reactome9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome9.png)
+
+- 例）UniProt accession list : Over-representation 解析 (ORA)
+  - 色は p-value
+  
+![reactome10](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome10.png)
+
+
+- 例）Microarray data : 発現解析 (ORA)
+  - 色は発現データの値
+  
+![reactome11](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome11.png)
+
 - 右のサンプルをクリックして GO ボタンをクリック
   - ID リストの場合は Over-representation 解析 (ORA）, Enrichment 解析
   - ID と数値のリストの場合は発現解析
