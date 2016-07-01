@@ -523,6 +523,7 @@ gene5400	…
 
 #### 実習 4. DAVID を用いて、発現データの結果を KEGG パスウェイにマッピングしてみよう
 - NCBI GEO から取ってきた"[サンプルデータ](https://raw.githubusercontent.com/AJACS-training/AJACS58/master/hono/secret_list.txt)"を右クリック、保存で、コンピュータにDLしてください（ソース：GEO ID : GSE15515）
+  - シロイヌナズナ（Arabidopsis thaliana）の細胞と、細胞壁分解酵素で処理しプロトプラストにした細胞を比較し、有意に発現減少した遺伝子群のリスト
   - Affymetrix プローブ ID のリストになっています
   - KEGG では Affy ID を直接扱えませんが、マイクロアレイデータ解析サービス "DAVID" 経由で KEGG パスウェイにマッピングすることができます
     - DAVID の他の使い方については [AJACS薩摩](https://github.com/AJACS-training/AJACS58/tree/master/hono)、[DAVIDを使ってマイクロアレイデータを解析する 2012](http://doi.org/10.7875/togotv.2012.079)、[DAVIDの使い方 実践編](http://doi.org/10.7875/togotv.2013.033)などを参照してください
@@ -534,7 +535,34 @@ gene5400	…
 
 ![david1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david1.png)
 
-  - Functional Annotation Tool で Gene Ontology の 代わりに Pathways を選択し、 KEGG_PATHWAY の Chart からマッピング（[過去の資料](https://github.com/AJACS-training/AJACS58/tree/master/hono)参照）
+- 遺伝子リストのロード
+  - Step 1 : リストをコピー＆ペーストするか、ファイルアップロード
+  - Step 2 : AFFYMETRIX_3PRIME_IVT_ID を選択
+  - Step 3 : Gene List を選択
+  − Step 4 : Submit
+
+![david2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david2.png)
+
+- 遺伝子リストが保存されます（例：シロイヌナズナの 2,928 遺伝子）
+- Functional Annotation Tool をクリックして、この遺伝子リストを解析
+
+![david3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david3.png)
+
+- Gene Ontology を含め幾つかのカテゴリにマッピングされています
+- 今回は Pathways の KEGG_PATHWAY の Chart ボタンをクリック
+
+![david4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david4.png)
+
+- 解析した遺伝子リストに関連の強いパスウェイのリストがポップアップされます
+
+![david5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david5.png)
+
+- これから、発現が現象した遺伝子は光合成関連の機能に関わるものが多いことが読み取れます
+- 各パスうウェイをクリックすると、KEGG パスウェイにマッピングされた画像が表示されます
+
+![david6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david6.png)
+
+- また DAVID の ID 変換機能や、[bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php) を使って ID 変換してからマッピングもできます
 
 
 - DAVID でプローブ ID を KEGG で扱える ID に変換するして、KEGG でマッピング
