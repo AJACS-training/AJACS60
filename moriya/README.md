@@ -349,12 +349,18 @@
 
 #### 実習 3-3. 好きな生物のパスウェイを見てみよう
 - プルダウンメニューから好きな生物を選択して Go をクリック
-  - 多すぎて選びにくい場合
-  - &lt; Sort below by alphabet &gt; を選択して Go をクリックでリストをソート
-  - &lt; Set personalized menu &gt; を選択して Go をクリックでポップアップウィンドウからリストの絞り込み
-  - ![kegg6](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg6.png)
-    - ドラフトゲノム、メタゲノムはここからは選べないので、生物種リストのページから、種のページ、パスウェイリストへ移動
-    - ![kegg7](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg7.png)
+  - リストが多すぎて選びにくいので
+    - &lt; Sort below by alphabet &gt; を選択して Go をクリックでリストをソート
+    - &lt; Set personalized menu &gt; を選択して Go をクリックでポップアップウィンドウからリストの絞り込み
+
+![kegg10](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg10.png)
+
+![kegg6x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg6.png)
+
+- 種、属でまとめたパスウェイ、ドラフトゲノム、メタゲノムのパスウェイはここからは選べないので、生物種リストのページから、種のページ、パスウェイリストへ移動する必要があります
+
+![kegg7x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg7.png)
+
 - 一部のボックスが緑色で塗られる、その生物の持つ遺伝子がマッピングされている
 
 
@@ -515,10 +521,20 @@ gene5399	K02893
 gene5400	…
 ```
 
-#### せっかくなので、[小野さんの講習](https://github.com/AJACS-training/AJACS58/tree/master/hono)の[マル秘遺伝子リスト](https://raw.githubusercontent.com/AJACS-training/AJACS58/master/hono/secret_list.txt)をマッピングしてみよう  
+#### 実習 4. DAVID を用いて、発現データの結果を KEGG パスウェイにマッピングしてみよう
+- NCBI GEO から取ってきた"[サンプルデータ](https://raw.githubusercontent.com/AJACS-training/AJACS58/master/hono/secret_list.txt)"を右クリック、保存で、コンピュータにDLしてください（ソース：GEO ID : GSE15515）
+  - Affymetrix プローブ ID のリストになっています
+  - KEGG では Affy ID を直接扱えませんが、マイクロアレイデータ解析サービス "DAVID" 経由で KEGG パスウェイにマッピングすることができます
+    - DAVID の他の使い方については [AJACS薩摩](https://github.com/AJACS-training/AJACS58/tree/master/hono)、[DAVIDを使ってマイクロアレイデータを解析する 2012](http://doi.org/10.7875/togotv.2012.079)、[DAVIDの使い方 実践編](http://doi.org/10.7875/togotv.2013.033)などを参照してください
+  - また [bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php) を使って ID 変換してからマッピングもできます
 
--  [DAVID](https://david.ncifcrf.gov/home.jsp) から直接マッピング
-  - Functional Annotation Tool で Gene Ontology の 代わりに Pathways を選択し、 KEGG_PATHWAY の Chart からマッピング（[小野さんの資料](https://github.com/AJACS-training/AJACS58/tree/master/hono)参照）
+− DAVID はアクセスが集中してアクセスを遮断されたことが、過去の講習会でありました。ちょうど開発版のサーバーがあったので、適当に分かれるように、ランダムでどちらかにアクセスしてください
+  - [DAVID](https://david.ncifcrf.gov/home.jsp)
+  - [DAVID-dev](https://david-d.ncifcrf.gov/home.jsp)
+
+![david1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david1.png)
+
+  - Functional Annotation Tool で Gene Ontology の 代わりに Pathways を選択し、 KEGG_PATHWAY の Chart からマッピング（[過去の資料](https://github.com/AJACS-training/AJACS58/tree/master/hono)参照）
 
 
 - DAVID でプローブ ID を KEGG で扱える ID に変換するして、KEGG でマッピング
@@ -552,19 +568,18 @@ Linux, Mac OS X のターミナル
   - Exec ボタンをクリック
 
 #### 実習 4 KEGG REST API を使ってデータをダウンロードしてみよう
-KEGG では FTP などで一括したデータのダウンロードはできないが、便利な API が容易されている
+KEGG では FTP での一括したデータのダウンロードは有料になりますが、無料で使える API が用意されています
 - http://www.kegg.jp/kegg/rest/keggapi.html
-
-- ヒトの遺伝子一覧
-  - http://rest.kegg.jp/list/hsa
-- ヒトのパスウェイ一覧
-  - http://rest.kegg.jp/list/pathway/hsa
-- ヒトの遺伝子一覧とパスウェイの対応
-  - http://rest.kegg.jp/link/hsa/pathway
-- ヒトの遺伝子 ID 対応表 (KEGG 遺伝子 ID 対 NCBI-GeneID)
-  - http://rest.kegg.jp/conv/ncbi-geneid/hsa
-  - NCBI-GeneID, NCBI-ProteinID, UniProt 以外は [LinkDB](http://www.genome.jp/linkdb/) で変換
-- ヒトのKGML形式のパスウェイのダウンロード(hsa00010)
-  - http://rest.kegg.jp/get/hsa00010/kgml
+  - ヒトの遺伝子一覧
+    - http://rest.kegg.jp/list/hsa
+  - ヒトのパスウェイ一覧
+    - http://rest.kegg.jp/list/pathway/hsa
+  - ヒトの遺伝子一覧とパスウェイの対応
+    - http://rest.kegg.jp/link/hsa/pathway
+  - ヒトの遺伝子 ID 対応表 (KEGG 遺伝子 ID 対 NCBI-GeneID)
+    - http://rest.kegg.jp/conv/ncbi-geneid/hsa
+    - NCBI-GeneID, NCBI-ProteinID, UniProt 以外は [LinkDB](http://www.genome.jp/linkdb/) で変換
+  - ヒトのKGML形式のパスウェイのダウンロード(hsa00010)
+    - http://rest.kegg.jp/get/hsa00010/kgml
 
 ---
