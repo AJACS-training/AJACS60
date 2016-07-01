@@ -474,6 +474,8 @@ KEGG には遺伝子リストからパスウェイをマッピングするツー
 - Use uncolored diagrams のチェックボックスをチェック（生物種マップの緑色を消去）
 - Exec ボタンをクリック
 
+![kegg23](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg23.png)
+
 自由に色を塗れる反面、色の定義付けなどは自分で行う必要があります
 
 ##### 数値データをマッピングしてみよう  
