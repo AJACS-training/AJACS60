@@ -268,6 +268,13 @@ RNA-seqデータ解析プログラムの1つであるcufflinksパッケージに
     # サンプル方向のデンドログラム
     dend <- csDendro(genes(cuff))
     
+    # sampleIDsに対応するデータのヒートマップ
+    data(sampleData)
+    my.genesID <- sampleIDs
+    my.geneset <- getGenes(cuff, my.genesID)
+    h <- csHeatmap(my.geneset, cluster = "both")
+    print(h)
+    
     #CSV形式でFPKM値を出力
     gene.matrix <- fpkmMatrix(genes(cuff))
     write.csv(gene.matrix, file="fpkm.csv")
