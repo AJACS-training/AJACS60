@@ -436,15 +436,22 @@
 ３種以上の比較も可能です
 
 #### 実習 3-7. サンプル・データをマッピングしてみよう
+KEGG には遺伝子リストからパスウェイをマッピングするツールが組み込まれています
+
 - [KEGG Mapper](http://www.kegg.jp/kegg/mapper.html)
 - Pathway mapping tool の２番目の [Search&Color Pathway](http://www.kegg.jp/kegg/tool/map_pathway2.html) をクリック
-- テキストエリア右の Examples: を選択して Exec ボタンをクリック
-  - [配列 ID or 代謝産物 ID] 塗りつぶし色[,線の色]
-    - 配列 ID は KEGG gene ID, NCBI-GeneID, NCBI-ProteinID, UniProt ID
-    - 代謝産物 ID は KEGG Compound ID （C番号）のみ
-    - 線の色はオプション
-    - 色は16進数表記か基本的なカラーネームで記述
-- ヒットしたパスウェイのリストが表示、カッコの中はヒットした要素の数
+  - Search against : データベースコード
+  - Primary ID : ID 種類（KEGG ID, NCBI-GeneID, NCBI-ProteinID, UniProt）
+  - テキストエリア : 要素のリスト（遺伝子、タンパク質、化合物）
+    - [配列 ID or 代謝産物 ID] 塗りつぶし色[,線の色]
+      - 配列 ID は KEGG gene ID, NCBI-GeneID, NCBI-ProteinID, UniProt ID
+      - 代謝産物 ID は KEGG Compound ID （C番号）のみ
+      - 線の色はオプション
+      - 色は16進数表記か基本的なカラーネームで記述
+
+![kegg21](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg21.png)
+
+- テキストエリア右の Example を選択して Exec ボタンをクリックすると、ヒットしたパスウェイのリストが表示されます（カッコの中はヒットした要素の数）
 
 ##### チンパンジーの遺伝子 (NCBI-GeneID) をマッピングしてみよう  
 - 例
@@ -480,6 +487,8 @@
 - ![kegg9](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg9.png)
 
 数値がグラデーションになってマッピングされる
+
+![kegg22](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg22.png)
 
 他の２つの Example: もマッピングしてみよう
 
