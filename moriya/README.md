@@ -366,9 +366,9 @@
 
 #### リファレンスパスウェイと種毎のパスウェイの関係  
 
-![kegg2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg2.png)
+![kegg2x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg2.png)
 
-![kegg3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg3.png)
+![kegg3x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg3.png)
 
 
 #### 実習 3-4. Overview マップを見てみよう  
@@ -378,11 +378,15 @@
 - 左にモジュールのリスト（KEGG におけるパスウェイの小さい機能単位）、右にマップが表示
 - 機能単位毎にパスウェイを強調表示できる
 
-#### 実習 3-5. 生物種毎の Overview マップを見てみよう  
-- プルダウンメニューから生物を選択し、Go をクリック
-- 生物の持っていない経路は灰色になる
+![kegg11](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg11.png)
 
-#### 実習 3-6. ヒトの疾患パスウェイを見てみよう
+- 生物種毎の Overview マップを見てみよう  
+  - プルダウンメニューから生物を選択し、Go をクリック
+  - 生物の持っていない経路は灰色になる
+
+![kegg12](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg12.png)
+
+#### 実習 3-5. ヒトの疾患パスウェイを見てみよう
 - http://www.genome.jp/kegg/pathway.html#disease
 - がん、免疫系疾患、神経変性疾患など多因子性の疾患
 - 好きな疾患パスウェイをクリック（例：[大腸がん](http://www.genome.jp/kegg-bin/show_pathway?hsa05210)）
@@ -391,28 +395,40 @@
   - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子
   - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子
 
-#### 実習 3-7. 種間比較をしてみよう
+#### 実習 3-6. 種間比較をしてみよう
 - http://www.genome.jp/kegg/kegg2.html
 - KEGG for pangenomes or genome comparison/combination のテキストボックスに "eco ecs" と入力して Go をクリック
   - eco：非病原性大腸菌 k-12
   - ecs：病原性大腸菌 O157
-- ![kegg12](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg12.png)
+
+![kegg13](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg13.png)
+  
 - 上のメニューの [Pathway map](http://www.genome.jp/kegg-bin/show_organism?menu_type=pathway_maps&orgs=eco%20ecs) をクリック
 - 好きなパスウェイをクリック
   - 前者が持っている遺伝子が緑、後者が持っている遺伝子がピンクで表示
   - Overview パスウェイの場合、両者が持っている遺伝子はライトブルーで表示
-- 戻って、[Bacterial secretion system](http://www.genome.jp/kegg-bin/show_pathway?orgs=eco%20ecs&mapno=03070) パスウェイをクリック
-  - 病原性に関わる III型、VI型分泌装置が O157 側だけが持っているのがわかる
 
-- 戻って "api buc" を入力し、Valine, leucine and isoleucine biosynthesis パスウェイを見てみよう
-  - api：アブラムシ
-  - buc：ブフネラ
+![kegg14](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg14.png)
+
+- 03070 : [Bacterial secretion system](http://www.genome.jp/kegg-bin/show_pathway?orgs=eco%20ecs&mapno=03070) パスウェイでは病原性に関わる III型、VI型分泌装置が O157 側だけが持っているのがわかる
+
+![kegg15](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg15.png)
+
+- 05130 : [Pathogenic Escherichia coli infection](http://www.genome.jp/kegg-bin/show_pathway?orgs=eco%20ecs&mapno=05130)
+
+![kegg16](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg16.png)
+
+同様にアブラムシとブフネラで、00290 : Valine, leucine and isoleucine biosynthesis の主観比較パスウェイを見てみよう
+  - アブラムシ : api
+  - ブフネラ : buc
   - 共生生物間のパスウェイ補完によってアミノ酸合成が可能になっていることがわかる
 
-３種以上の比較も可能  
+![kegg17](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg17.png)
+
+３種以上の比較も可能です
 
 
-#### 実習 3-8. 配列 ID を KEGG の遺伝子 ID に変換しよう
+#### 実習 3-7. 配列 ID を KEGG の遺伝子 ID に変換しよう
 遺伝子 ID やタンパク質 ID を使ってパスウェイにマッピングしたいが KEGG のウェブサイトでは KEGG 遺伝子 ID が必要な場合もある  
   - [Link DB](http://www.genome.jp/linkdb/)
     - データベースエントリー ID 間のリンク情報を収集したデータベース
@@ -423,7 +439,7 @@
   - ![linkdb2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb2.png)
 
 
-#### 実習 3-9. サンプル・データをマッピングしてみよう
+#### 実習 3-8. サンプル・データをマッピングしてみよう
 - [KEGG Mapper](http://www.kegg.jp/kegg/mapper.html)
 - Pathway mapping tool の２番目の [Search&Color Pathway](http://www.kegg.jp/kegg/tool/map_pathway2.html) をクリック
 - テキストエリア右の Examples: を選択して Exec ボタンをクリック
@@ -474,7 +490,7 @@
 [Color Pathway WebGL](http://www.kegg.jp/kegg/tool/map_pathway3a.html) も使ってみよう  
 - Example: を使って、どんな絵になるか試してみましょう
 
-#### 実習 3-10. KEGG データベースにはない遺伝子をマッピングしてみよう
+#### 実習 3-9. KEGG データベースにはない遺伝子をマッピングしてみよう
 KEGG に登録されている配列データと類似性を計算し、自動で遺伝子機能を推定、パスウェイへのマッピングを行う  
 
 - [KAAS](http://www.genome.jp/tools/kaas/)
@@ -521,7 +537,7 @@ gene5399	K02893
 gene5400	…
 ```
 
-#### 実習 3-11. DAVID を用いて、発現データの結果を KEGG パスウェイにマッピングしてみよう
+#### 実習 3-10. DAVID を用いて、発現データの結果を KEGG パスウェイにマッピングしてみよう
 - NCBI GEO から取ってきた"[サンプルデータ](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/dat/list1.txt)"を右クリック、保存で、コンピュータにDLしてください（ソース：GEO ID : GSE15515）
   - シロイヌナズナ（Arabidopsis thaliana）の細胞と、細胞壁分解酵素で処理しプロトプラストにした細胞を比較し、有意に発現減少した遺伝子群のリスト
   - Affymetrix プローブ ID のリストになっています
