@@ -361,8 +361,9 @@
 
 ![kegg7x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg7.png)
 
-- 一部のボックスが緑色で塗られる、その生物の持つ遺伝子がマッピングされている
+- 一部のボックスが緑色で塗られる、その生物（またはサンプル）の持つ遺伝子を示しています
 
+![kegg18](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg18.png)
 
 #### リファレンスパスウェイと種毎のパスウェイの関係  
 
@@ -390,10 +391,17 @@
 - http://www.genome.jp/kegg/pathway.html#disease
 - がん、免疫系疾患、神経変性疾患など多因子性の疾患
 - 好きな疾患パスウェイをクリック（例：[大腸がん](http://www.genome.jp/kegg-bin/show_pathway?hsa05210)）
-  - 赤字の遺伝子が疾患の病因遺伝子
+  - 赤字の遺伝子が疾患の病因遺伝子を示しています
+
+![kegg19](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg19.png)
+
 - プルダウンメニューから [Homo sapiens (human) + Disease/drug](http://www.genome.jp/kegg-bin/show_pathway?org_name=hsadd&mapno=05210&mapscale=&show_description=hide) を選択
-  - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子
-  - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子
+  - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子を示しています
+  - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子を示しています
+
+![kegg20](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg20.png)
+
+このように、KEGG では正常な状態のパスウェイの他に、病原因子や医薬品、そのターゲットなどの情報もパスウェイとして表現されています
 
 #### 実習 3-6. 種間比較をしてみよう
 - http://www.genome.jp/kegg/kegg2.html
@@ -418,7 +426,7 @@
 
 ![kegg16](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg16.png)
 
-同様にアブラムシとブフネラで、00290 : Valine, leucine and isoleucine biosynthesis の主観比較パスウェイを見てみよう
+##### 同様にアブラムシとブフネラで、00290 : Valine, leucine and isoleucine biosynthesis の主観比較パスウェイを見てみよう
   - アブラムシ : api
   - ブフネラ : buc
   - 共生生物間のパスウェイ補完によってアミノ酸合成が可能になっていることがわかる
@@ -427,30 +435,25 @@
 
 ３種以上の比較も可能です
 
+#### 実習 3-7. サンプル・データをマッピングしてみよう
+KEGG には遺伝子リストからパスウェイをマッピングするツールが組み込まれています
 
-#### 実習 3-7. 配列 ID を KEGG の遺伝子 ID に変換しよう
-遺伝子 ID やタンパク質 ID を使ってパスウェイにマッピングしたいが KEGG のウェブサイトでは KEGG 遺伝子 ID が必要な場合もある  
-  - [Link DB](http://www.genome.jp/linkdb/)
-    - データベースエントリー ID 間のリンク情報を収集したデータベース
-    - ID 変換にも利用可能
-  - 図の Genes をクリックすると、KEGG に登録されている遺伝子と関連のあるデータベースが表示される
-  - ![linkdb1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb1.png)
-  - 表示されてたデータベースをクリックすると、下のフォームに選択したデータベースの内容が入るので、Download ボタンをクリックすると対応表がダウンロードできる
-  - ![linkdb2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb2.png)
-
-
-#### 実習 3-8. サンプル・データをマッピングしてみよう
 - [KEGG Mapper](http://www.kegg.jp/kegg/mapper.html)
 - Pathway mapping tool の２番目の [Search&Color Pathway](http://www.kegg.jp/kegg/tool/map_pathway2.html) をクリック
-- テキストエリア右の Examples: を選択して Exec ボタンをクリック
-  - [配列 ID or 代謝産物 ID] 塗りつぶし色[,線の色]
-    - 配列 ID は KEGG gene ID, NCBI-GeneID, NCBI-ProteinID, UniProt ID
-    - 代謝産物 ID は KEGG Compound ID （C番号）のみ
-    - 線の色はオプション
-    - 色は16進数表記か基本的なカラーネームで記述
-- ヒットしたパスウェイのリストが表示、カッコの中はヒットした要素の数
+  - Search against : データベースコード
+  - Primary ID : ID 種類（KEGG ID, NCBI-GeneID, NCBI-ProteinID, UniProt）
+  - テキストエリア : 要素のリスト（遺伝子、タンパク質、化合物）
+    - [配列 ID or 代謝産物 ID] 塗りつぶし色[,線の色]
+      - 配列 ID は KEGG gene ID, NCBI-GeneID, NCBI-ProteinID, UniProt ID
+      - 代謝産物 ID は KEGG Compound ID （C番号）のみ
+      - 線の色はオプション
+      - 色は16進数表記か基本的なカラーネームで記述
 
-チンパンジーの遺伝子 (NCBI-GeneID) をマッピングしてみよう  
+![kegg21](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg21.png)
+
+- テキストエリア右の Example を選択して Exec ボタンをクリックすると、ヒットしたパスウェイのリストが表示されます（カッコの中はヒットした要素の数）
+
+##### チンパンジーの遺伝子 (NCBI-GeneID) をマッピングしてみよう  
 - 例
 ```
 453039 red  
@@ -471,9 +474,11 @@
 - Use uncolored diagrams のチェックボックスをチェック（生物種マップの緑色を消去）
 - Exec ボタンをクリック
 
-自由に色を塗れる反面、色の定義付けなどは自分で行う必要がある
+![kegg23](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg23.png)
 
-数値データをマッピングしてみよう  
+自由に色を塗れる反面、色の定義付けなどは自分で行う必要があります
+
+##### 数値データをマッピングしてみよう  
 - [Color Pathway](http://www.kegg.jp/kegg/tool/map_pathway3.html) をクリック
 - 右のサンプル CML-COSMIC をダウンロード
   - 中身は配列 ID と数値の対応リスト
@@ -485,12 +490,14 @@
 
 数値がグラデーションになってマッピングされる
 
+![kegg22](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg22.png)
+
 他の２つの Example: もマッピングしてみよう
 
 [Color Pathway WebGL](http://www.kegg.jp/kegg/tool/map_pathway3a.html) も使ってみよう  
 - Example: を使って、どんな絵になるか試してみましょう
 
-#### 実習 3-9. KEGG データベースにはない遺伝子をマッピングしてみよう
+#### 実習 3-8. KEGG データベースにはない遺伝子をマッピングしてみよう
 KEGG に登録されている配列データと類似性を計算し、自動で遺伝子機能を推定、パスウェイへのマッピングを行う  
 
 - [KAAS](http://www.genome.jp/tools/kaas/)
@@ -504,7 +511,7 @@ KEGG に登録されている配列データと類似性を計算し、自動で
   - 配列類似性の計算は BLAST, GhostX ベース
   - クエリーからデータベースへの片方向の計算なのと、データベースを圧縮しているぶん KAAS より早い
   
-BlastKOALA を使ったパスウェイへのマッピング
+#### BlastKOALA を使ったパスウェイへのマッピング
 - [Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html)
 - Exapmle: の sequence.txt をコピー＆ペースト、もすくはダウンロードしてファイルを選択
   - Buchnera の仲間
@@ -537,13 +544,13 @@ gene5399	K02893
 gene5400	…
 ```
 
-#### 実習 3-10. DAVID を用いて、発現データの結果を KEGG パスウェイにマッピングしてみよう
+#### 実習 3-9. DAVID を用いて、発現データの結果を KEGG パスウェイにマッピングしてみよう
 - NCBI GEO から取ってきた"[サンプルデータ](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/dat/list1.txt)"を右クリック、保存で、コンピュータにDLしてください（ソース：GEO ID : GSE15515）
   - シロイヌナズナ（Arabidopsis thaliana）の細胞と、細胞壁分解酵素で処理しプロトプラストにした細胞を比較し、有意に発現減少した遺伝子群のリスト
   - Affymetrix プローブ ID のリストになっています
   - KEGG では Affy ID を直接扱えませんが、マイクロアレイデータ解析サービス "DAVID" 経由で KEGG パスウェイにマッピングすることができます
     - DAVID の他の使い方については [AJACS薩摩](https://github.com/AJACS-training/AJACS58/tree/master/hono)、[DAVIDを使ってマイクロアレイデータを解析する 2012](http://doi.org/10.7875/togotv.2012.079)、[DAVIDの使い方 実践編](http://doi.org/10.7875/togotv.2013.033)などを参照してください
-  - また [bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php) を使って ID 変換してからマッピングもできます
+
 
 − DAVID はアクセスが集中してアクセスを遮断されたことが、過去の講習会でありました。ちょうど開発版のサーバーがあったので、適当に分かれるように、ランダムでどちらかにアクセスしてください
   - [DAVID](https://david.ncifcrf.gov/home.jsp)
@@ -578,14 +585,26 @@ gene5400	…
 
 ![david6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david6.png)
 
-- また DAVID の ID 変換機能や、[bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php) を使って ID 変換してからマッピングもできます
-  - DAVID の場合、上のメニューの Shortcut to DAVID Tools > Gene ID Conversion で KEGG で扱える "ENTREZ_GENE_ID" に変換ができる
+#### 実習 3-10. ID 変換をしてからパスウェイにマッピングしよう
+KEGGパスウェイでは、マッピングで扱える 遺伝子 ID に制限があります
+DAVID の ID 変換機能や、[Link DB](http://www.genome.jp/linkdb/)、[bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php) を使って ID 変換してからマッピングすることができます
+
+##### DAVID
+- 遺伝子リストをロードした後、上のメニューの Shortcut to DAVID Tools > Gene ID Conversion で KEGG で扱える "ENTREZ_GENE_ID" に変換ができます
 
 ![david7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david7.png)
 ![david8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david8.png)
 ![david9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david9.png)
 
-- [bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php) の場合
+##### [Link DB](http://www.genome.jp/linkdb/)
+データベースエントリー ID 間のリンク情報を収集したデータベース
+ID 変換にも利用可能（今回のサンプルの Affy ID のは対応していません）
+  - 図の Genes をクリックすると、KEGG に登録されている遺伝子と関連のあるデータベースが表示される
+  - ![linkdb1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb1.png)
+  - 表示されてたデータベースをクリックすると、下のフォームに選択したデータベースの内容が入るので、Download ボタンをクリックすると対応表がダウンロードできる
+  - ![linkdb2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb2.png)
+
+##### [bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php)
   - Input : Affy ID
   - Output : KEGG Gene ID
   - Organism : 3702 (A.thaliana の taxon id)
@@ -597,7 +616,7 @@ gene5400	…
   
 ![biofb2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biodb2.png)
 
-- [変換した遺伝子リスト](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/dat/list2.txt)をダウンロードして、KEGG の [Search&Color Pathway](http://www.genome.jp/kegg/tool/map_pathway2.html) を使ってパスウェイにマッピングしてみましょう
+##### [変換した遺伝子リスト](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/dat/list2.txt)をダウンロードして、KEGG の [Search&Color Pathway](http://www.genome.jp/kegg/tool/map_pathway2.html) を使ってパスウェイにマッピングしてみましょう
 
 ![biofb3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biodb3.png)
 
