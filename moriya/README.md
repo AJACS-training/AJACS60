@@ -361,8 +361,9 @@
 
 ![kegg7x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg7.png)
 
-- 一部のボックスが緑色で塗られる、その生物の持つ遺伝子がマッピングされている
+- 一部のボックスが緑色で塗られる、その生物（またはサンプル）の持つ遺伝子を示しています
 
+![kegg18](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg18.png)
 
 #### リファレンスパスウェイと種毎のパスウェイの関係  
 
@@ -390,10 +391,17 @@
 - http://www.genome.jp/kegg/pathway.html#disease
 - がん、免疫系疾患、神経変性疾患など多因子性の疾患
 - 好きな疾患パスウェイをクリック（例：[大腸がん](http://www.genome.jp/kegg-bin/show_pathway?hsa05210)）
-  - 赤字の遺伝子が疾患の病因遺伝子
+  - 赤字の遺伝子が疾患の病因遺伝子を示しています
+
+![kegg19](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg19.png)
+
 - プルダウンメニューから [Homo sapiens (human) + Disease/drug](http://www.genome.jp/kegg-bin/show_pathway?org_name=hsadd&mapno=05210&mapscale=&show_description=hide) を選択
-  - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子
-  - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子
+  - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子を示しています
+  - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子を示しています
+
+![kegg20](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg20.png)
+
+このように、KEGG では正常な状態のパスウェイの他に、病原因子や医薬品、そのターゲットなどの情報もパスウェイとして表現されています
 
 #### 実習 3-6. 種間比較をしてみよう
 - http://www.genome.jp/kegg/kegg2.html
@@ -492,7 +500,7 @@ KEGG に登録されている配列データと類似性を計算し、自動で
   - 配列類似性の計算は BLAST, GhostX ベース
   - クエリーからデータベースへの片方向の計算なのと、データベースを圧縮しているぶん KAAS より早い
   
-BlastKOALA を使ったパスウェイへのマッピング
+#### BlastKOALA を使ったパスウェイへのマッピング
 - [Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html)
 - Exapmle: の sequence.txt をコピー＆ペースト、もすくはダウンロードしてファイルを選択
   - Buchnera の仲間
