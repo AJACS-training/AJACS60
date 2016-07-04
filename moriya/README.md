@@ -98,12 +98,15 @@
 #### パスウェイデータベースのデータ形式
 計算機での取り扱いを目的として XML (Extensible Markup Language) で記述されていることが多くなっています
 - [KGML](http://www.genome.jp/kegg/xml/docs/) (KEGG Markup Language) は分子間の関係とダイアグラムのレイアウトを取り扱うための KEGG 独自のフォーマット
-- [SBML](http://sbml.org/Main_Page) (Systems Biology Markup Language)、[CellML](https://www.cellml.org/)、[CSML](http://www.csml.org/) (Cell System Markup Language) はパスウェイのシミュレーションやモデリングのためのフォーマット
+- [SBML](http://sbml.org/Main_Page) (Systems Biology Markup Language)、[CellML](https://www.cellml.org/)、[CSML](http://www.csml.org/) (Cell System Markup Language) はパスウェイのシミュレーションやモデリングを行うためのフォーマット
 - [PSI-MI](http://www.psidev.info/node/60) (Proteomics Standards Initiative Molecular Interaction XML Format) はタンパク質間相互作用を記述するためのフォーマット
-- [BioPAX](http://www.biopax.org/) (Biological Pathways Exchange) は様々なパスウェイデータを統合したり、データ交換を行うことを目的として策定された標準フォーマット
+- [BioPAX](http://www.biopax.org/) (Biological Pathways Exchange) は様々なパスウェイデータを統合したり、データ交換を行うことを目的として策定された標準化を目指したフォーマット
+
+これらのデータ形式を扱うことのできるネットワーク可視化ソフトウェアには [Cyroscape](http://www.cytoscape.org/) や [VisANT](http://visant.bu.edu/) などがあります
+- [AJACS58 : Cytoscapeを使ったデータの可視化](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=AJACS58_Cytoscape.pdf&refer=AJACS58)
 
 どのパスウェイデータベースを研究に使えば良いかは、対象生物や対象パスウェイ、目的によって異なってきます  
-ここでは BioCyc, Reactome, KEGG PATHWAY を紹介します
+今回は BioCyc, Reactome, KEGG PATHWAY のブラウザ上での使い方を紹介します
 
 ----
 ## BioCyc
