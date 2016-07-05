@@ -16,7 +16,7 @@
     - Analysis tool を用いてパスウェイにマッピングする
   - KEGG PATHWAY
     - KEGG Mapper を用いてパスウェイにマッピングする
-    - BlastKOALA を用いて新規遺伝子の機能を推定し、パスウェイにマップングする
+    - BlastKOALA を用いて新規遺伝子の機能を推定し、パスウェイにマッピングする
 
 --
 #### 講習に際しての注意とお願い
@@ -523,7 +523,7 @@ KEGG に登録されている配列データと類似性を計算し、自動で
   - 新たに開いたウィンドウで、Buchnera を探し、Taxonomy番号をクリック
 - ![kegg10](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg10.png)
 - Exec ボタンをクリック
-  - 数分待つ（[講習会用結果例](http://www.kegg.jp/kegg-bin/blastkoala_result?id=05542d03b7004212294ff162ef08683fbf16cfb7&passwd=7Q95jf&mode=mapper)）
+  - 数分待つ（講習会用結果例 : [BlastKOALA](http://www.kegg.jp/kegg-bin/blastkoala_result?id=05542d03b7004212294ff162ef08683fbf16cfb7&passwd=7Q95jf&mode=mapper), [GhostKOALA](http://www.kegg.jp/kegg-bin/blastkoala_result?id=277f705de16dc96171e5d4c07c1133a61bb0e09f&passwd=k32y6B&type=ghostkoala)）
   - Reconstruct Pathway から遺伝子がマッピングされたパスウェイを見ることができる
 - ![kegg11](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg11.png)
 
