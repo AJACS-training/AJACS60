@@ -20,34 +20,34 @@
 
 ### プログラム
 #### 7月5日(火)
-9:35～11:35 「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS60/blob/master/01_mori/)」  
+9:35～11:35 「[NBDCの紹介とNBDCが提供するサービス](https://github.com/AJACS-training/AJACS60/blob/master/mori/)」  
 森 亮樹  
 (科学技術振興機構バイオサイエンスデータベースセンター)  
 箕輪 真理  
 (科学技術振興機構バイオサイエンスデータベースセンター/情報・システム研究機構ライフサイエンス統合データベースセンター)  
 
-13:00～14:30 「[パスウェイデータベースの紹介とKEGG PATHWAYの使い方](https://github.com/AJACS-training/AJACS60/blob/master/02_moriya/)」  
+13:00～14:30 「[パスウェイデータベースの紹介とKEGG PATHWAYの使い方](https://github.com/AJACS-training/AJACS60/blob/master/moriya/)」  
 守屋 勇樹  
 (情報・システム研究機構ライフサイエンス統合データベースセンター)  
 
-14:40～16:40 「[遺伝子発現DBの使い方](https://github.com/AJACS-training/AJACS60/blob/master/03_bono/)」  
+14:40～16:40 「[遺伝子発現DBの使い方](https://github.com/AJACS-training/AJACS60/blob/master/bono1/)」  
 坊農 秀雅  
 (情報・システム研究機構ライフサイエンス統合データベースセンター)  
 
 #### 7月6日(水)
 
-9:30～11:00 「[DDBJ Pipelineを用いたDNA多型注釈解析の実習](https://github.com/AJACS-training/AJACS60/blob/master/04_mochizuki/)」  
+9:30～11:00 「[DDBJ Pipelineを用いたDNA多型注釈解析の実習](https://github.com/AJACS-training/AJACS60/blob/master/mochizuki/)」  
 望月 孝子  
 (国立遺伝学研究所生命情報研究センター)  
 
-11:10～12:40 「[メタボローム解析の紹介](https://github.com/AJACS-training/AJACS60/blob/master/05_sakurai/)」  
+11:10～12:40 「[メタボローム解析の紹介](https://github.com/AJACS-training/AJACS60/blob/master/sakurai/)」  
 櫻井 望  
 (かずさDNA研究所)  
 
-13:40～15:10 「[文献情報を活用する](https://github.com/AJACS-training/AJACS60/blob/master/06_yamamoto/)」  
+13:40～15:10 「[文献情報を活用する](https://github.com/AJACS-training/AJACS60/blob/master/yamamoto/)」  
 山本 泰智  
 (情報・システム研究機構ライフサイエンス統合データベースセンター)  
 
-15:20～16:50 「[ライフサイエンス分野データの可視化と共有化](https://github.com/AJACS-training/AJACS60/blob/master/07_bono/)」  
+15:20～16:50 「[ライフサイエンス分野データの可視化と共有化](https://github.com/AJACS-training/AJACS60/blob/master/bono2/)」  
 坊農 秀雅  
 (情報・システム研究機構ライフサイエンス統合データベースセンター)  
