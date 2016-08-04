@@ -51,9 +51,9 @@
 - [ベーリンガーマンハイム社（現ロシュ社）の代謝マップ](http://www.roche.com/sustainability/what_we_do/for_communities_and_environment/philanthropy/science_education/pathways.htm) (1965~)
 - 最初は紙媒体での出版。のちに[電子化](http://biochemical-pathways.com/)されています
 
-![pathway1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathway1.png)
+![pathway1](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-pathway1.png)
 
-![pathway2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathway2.png)
+![pathway2](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-pathway2.png)
 
 - 計算機上で表現することで、様々な可視化が行えるようになり、パスウェイ全体を俯瞰したり、一部の相互作用に注目したり、生命現象の理解が行い易くなります
 - また、データベース化することで網羅的に扱えるようになり、コンピューターでの利用が可能になします
@@ -71,7 +71,7 @@
   - Availability: 有料か無料か  
   - Standards: 標準データ形式(BioPAX, SBML等)に準拠しているかどうか
 
-![pathguide](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-pathguide.png)
+![pathguide](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-pathguide.png)
 
 歴史的には代謝経路の表現から始まりましたが、現在ではタンパク質間相互作用、シグナル伝達系、遺伝子制御、環境シグナルなど様々な生命現象がパスウェイとして表現されています
 
@@ -92,7 +92,7 @@
 - KEGG Pathway での表現例
   - 代謝パスウェイでは代謝産物をノード、酵素反応をエッジとして表現されています
   - 制御系ではタンパク質や遺伝子、その他の小分子をノード、その関係性（活性化、抑制、リン酸化など）がエッジとして表現されています
-  
+
 ![pathway1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-pathway1.png)
 
 #### パスウェイデータベースのデータ形式
@@ -118,7 +118,7 @@
 - 利用：アカデミックフリー
 - データ形式：BioPAX
 
-![biocyc1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc1.png)
+![biocyc1](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc1.png)
 
 
 #### 実習 1-1. 対象生物種を見てみよう  
@@ -129,27 +129,27 @@
   - Tier 3：自動ツールで作成 (>7,500 DBs)
 - MetaCyc だけは 生物種のデータベースではなく、2,000 種以上から構築したリファレンス代謝パスウェイ
 
-![biocyc2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc2.png)
+![biocyc2](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc2.png)
 
 #### 実習 1-2. 好きな生物のパスウェイを見てみよう
 - リストから好きな生物種のデータベースへ移動（例： [EcoCyc](http://biocyc.org/ecocyc/index.shtml)）
 - 右上の検索ボックスで "glycolysis" や "tca" などの注目している生命現象関連の単語を入力し、Quick Search ボタンをクリック
 
-![biocyc3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc3.png)
+![biocyc3](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc3.png)
 
 - パスウェイのリストが表示されるので、クリック
 
-![biocyc4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc4.png)
+![biocyc4](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc4.png)
 
 - 代謝パスウェイが表示されます
   - 代謝反応が青の矢印で、制御関係が灰色の矢印で示されている
   - More Detail ボタンをクリックすると、酵素名、代謝産物の構造などが追加される
 
-![biocyc5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc5.png)
+![biocyc5](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc5.png)
 
 - EcoCyc など一部の生物種では、代謝パスウェイに関わる酵素の発現制御ネットワークも表示されます
 
-![biocyc6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc6.png)
+![biocyc6](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc6.png)
 
 - 右の Options メニューから、表示のカスタマイズやダウンロードが可能
 - ![biocyc3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc3.png)
@@ -158,11 +158,11 @@
 #### 実習 1-3. 種間比較をしてみよう
 - 右の Option メニューの [Species Comparison](http://ecocyc.org/compare-frame-in-orgs?type=PATHWAY&object=GLYCOLYSIS&initial-orgs=(ECOLI)&detail-level=1) をクリック
 
-![biocyc7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc7.png)
+![biocyc7](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc7.png)
 
 - 比較する種の選択画面が表示されるので、比較したい好きな種を入力し、OK をクリック
 
-![biocyc8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc8.png)
+![biocyc8](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc8.png)
 
 - パスウェイや遺伝子、オペロン構造などが比較できます
 
@@ -170,19 +170,19 @@
 #### 実習 1-4. 好きな生物の Overview パスウェイを見てみよう  
 - 上のメニューの Metabolism > [Cellular Overview](http://ecocyc.org/overviewsWeb/celOv.shtml?orgid=ECOLI&pnids=GLYCOLYSIS) をクリック
 
-![biocyc9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc9.png)
+![biocyc9](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc9.png)
 
 - パスウェイや反応、遺伝子、酵素、化合物の名前や ID で Overview パスウェイをハイライト
 
-![biocyc10](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc10.png)
-![biocyc11](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc11.png)
-![biocyc12](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc12.png)
+![biocyc10](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc10.png)
+![biocyc11](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc11.png)
+![biocyc12](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc12.png)
 
 #### 実習 1-5. 遺伝子発現データをマッピングしてみよう
 - NCBI GEO (Gene Expression Omnibus)のデータを直接マッピングできます
 - 右のメニューの Import Data from GEO をクリック
 
-![biocyc13](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc13.png)
+![biocyc13](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc13.png)
 
 - キーワード検索で GEO のデータを検索し、データを一つ選択（例：O157)
 - マッピングオプション例
@@ -190,12 +190,12 @@
   - Use data form: Ratio of two columns を選択
   - Numerator Column, Denominator Column を一つづつ選択
 
-![biocyc14](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc14.png)
+![biocyc14](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc14.png)
 
 - 例）病原性大腸菌O157のシナモアルデヒド応答、２時間目と４時間目の遺伝子発現の割合
   - この例の場合、オレンジ-赤で示された遺伝子は発現が増え、青-紫で示された遺伝子は発現が減っています
 
-![biocyc15](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biocyc15.png)
+![biocyc15](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc15.png)
 
 - 時間が余った人は、いろいろなオプション（アニメーション、テーブル出力など）を試してみましょう
 
@@ -212,56 +212,56 @@
 - 利用：フリー
 - データ形式：BioPAX, SBML
 
-![reactome1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome1.png)
+![reactome1](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome1.png)
 
 #### 実習 2-1. 好きな生物のパスウェイを見てみよう  
 - [Browse Pathways](http://www.reactome.org/PathwayBrowser/) ボタンをクリック
 - 初期画面はヒトのパスウェイの全体像なので、好きな種を選択
   - 全体像は分子間相互作用のダイアグラムではなく、小さく区分けされた各パスウェイのネットワーク図で表現されています
 
-![reactome2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome2.png)
+![reactome2](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome2.png)
 
 - 左のパスウェイのリスト、右のパスウェイマップが連動していて、下層になると分子間相互作用を表したダイアグラムが表示されます
 - 全体表示とダイアグラム表示はアイコンで切り替えられます
 
-![reactome3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome3.png)
-![reactome4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome4.png)
+![reactome3](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome3.png)
+![reactome4](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome4.png)
 
 - ダイアグラムの各オブジェクトの説明は右上のアイコンで見れます
 
-![reactome5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome5.png)
+![reactome5](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome5.png)
 
 - マップ左上の虫眼鏡アイコンをから、キーワード検索もできます
 
-![reactome6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome6.png)
+![reactome6](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome6.png)
 
 #### 実習 2-2. サンプル・データをマッピングしてみよう
 - サイトにサンプルデータが用意されているので、マッピングしてみる（ヒトのサンプルしか無いので、ヒトのパスウェイに移動）
 - 上、右側の Analysis: アイコンをクリック
 
-![reactome7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome7.png)
+![reactome7](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome7.png)
 
 - ファイルアップロードとデータペーストからパスウェイへのマッピングが可能です
   - 今回はテキストボックス横のサンプルを選択して Continue
 
-![reactome8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome8.png)
+![reactome8](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome8.png)
 
 - Options
   - Project to human : ヒト以外の生物種のデータをオーソログ推定を経て、ヒトのパスウェイにマッピング
   - Include Interactors : IntAct 相互作用データベースの情報も加えてパスウェイにマッピング
 
-![reactome9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome9.png)
+![reactome9](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome9.png)
 
 - 例）UniProt accession list : Over-representation 解析 (ORA)
   - 色は p-value
-  
-![reactome10](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome10.png)
+
+![reactome10](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome10.png)
 
 
 - 例）Microarray data : 発現解析
   - 色は発現データの値
-  
-![reactome11](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-reactome11.png)
+
+![reactome11](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-reactome11.png)
 
 
 - 種間比較をしてみよう
@@ -272,7 +272,7 @@
 
 他のReactome
 - http://www.reactome.org/pages/about/other-reactomes/
-  
+
 ----
 ## KEGG PATHWAY
 - ウェブサイト：http://www.kegg.jp/
@@ -289,13 +289,13 @@
   - [KCPAVS KEGG-XML converter](http://www.kcpavs.cidms.org/kcpavs-features/tools-and-utilities/kegg-xml-converter) などで代謝パスウェイ、シグナル伝達などの多くのパスウェイを標準形式 に変換可能
   - [KEGGscape] (http://apps.cytoscape.org/apps/keggscape) でネットワーク可視化ソフト Cytoscape に読み込み可能
 
-![kegg1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg1.png)
+![kegg1](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg1.png)
 
 #### KEGG はデータベースの集合
 - [KEGG2](http://www.kegg.jp/kegg/kegg2.html) をクリック
 - KEGG PATHWAY を含むシステム情報データベースの他に、遺伝情報、化学情報、健康情報などのデータベースがリンクしています
 
-![kegg2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg2.png)
+![kegg2](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg2.png)
 
 - 今回は PATHWAY 以外の詳細は省くので、それ以外の詳細は過去の AJACS 資料を参照
   - [AJACS50](http://motdb.dbcls.jp/?plugin=attach&pcmd=open&file=140912AJACS50_kawano.pdf&refer=AJACS50)
@@ -307,8 +307,8 @@
 #### 実習 3-1. 対象生物種を見てみよう
 - データベースのテーブルの下、[KEGG organisms](http://www.kegg.jp/kegg/catalog/org_list.html) をクリック
 
-![kegg3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg3.png)
-![kegg4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg4.png)
+![kegg3](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg3.png)
+![kegg4](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg4.png)
 
 - KEGG では 3-4 文字の独自の生物種コードを使用している
 - 生物種コードのリンクをクリックすると、種の情報が表示されます
@@ -317,8 +317,8 @@
     - KOALA : SSEARCH ベースの自動ツールによるアノテーション（ゴリラ(ggo)等）
     - BlastKOALA : BLAST ベースの自動ツールによるアノテーション（ドラフトゲノム）
     - GhostKOALA : GhostX ベースの自動ツールによるアノテーション（メタゲノム）
-	
-![kegg5x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg5.png)	
+
+![kegg5x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg5.png)
 
 - データベースリスト
   - Genomes : 主に NCBI Refseq、GenBank に登録された生物種
@@ -327,27 +327,27 @@
   - Draft : Genomes に入っていない真核生物
   - Meta : メタゲノム
 
-![kegg5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg5.png)
+![kegg5](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg5.png)
 
 #### 実習 3-2. パスウェイマップを見てみよう  
 - [トップページ](http://www.kegg.jp) 上方の検索ボックスで "lysine biosynthesis" や "glycolysis" やなどの生命現象関連の単語を入力し、Search ボタンをクリック
 
-![kegg6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg6.png)
+![kegg6](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg6.png)
 
 - KEGG データベース全体でヒットしたエントリーが全てリストアップされ、KEGG PATHWAY にヒットがあれば、一番上に表示されます
 
-![kegg7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg7.png)
+![kegg7](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg7.png)
 
 - 各パスウェイの情報が表示されます
   - KEGG におけるパスウェイの最小単位で、ダイアグラム画像を "マップ" と呼んでいます
 
-![kegg8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg8.png)
+![kegg8](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg8.png)
 
 - この色のついていない白いダイアグラムが、専門家が手作業で文献ベースから作成したリファレンスパスウェイになります
   - ボックスが遺伝子やタンパク質などの配列情報、丸が代謝産物、環境物質などの化合物
   - 各図形の説明は右上の Help から見られます
-  
-![kegg9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg9.png)
+
+![kegg9](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg9.png)
 
 
 #### 実習 3-3. 好きな生物のパスウェイを見てみよう
@@ -356,7 +356,7 @@
     - &lt; Sort below by alphabet &gt; を選択して Go をクリックでリストをソート
     - &lt; Set personalized menu &gt; を選択して Go をクリックでポップアップウィンドウからリストの絞り込み
 
-![kegg10](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg10.png)
+![kegg10](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg10.png)
 
 ![kegg6x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg6.png)
 
@@ -366,7 +366,7 @@
 
 - 一部のボックスが緑色で塗られる、その生物（またはサンプル）の持つ遺伝子を示しています
 
-![kegg18](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg18.png)
+![kegg18](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg18.png)
 
 #### リファレンスパスウェイと種毎のパスウェイの関係  
 
@@ -382,13 +382,13 @@
 - 左にモジュールのリスト（KEGG におけるパスウェイの小さい機能単位）、右にマップが表示
 - 機能単位毎にパスウェイを強調表示できる
 
-![kegg11](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg11.png)
+![kegg11](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg11.png)
 
 - 生物種毎の Overview マップを見てみよう  
   - プルダウンメニューから生物を選択し、Go をクリック
   - 生物の持っていない経路は灰色になる
 
-![kegg12](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg12.png)
+![kegg12](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg12.png)
 
 #### 実習 3-5. ヒトの疾患パスウェイを見てみよう
 - http://www.genome.jp/kegg/pathway.html#disease
@@ -396,13 +396,13 @@
 - 好きな疾患パスウェイをクリック（例：[大腸がん](http://www.genome.jp/kegg-bin/show_pathway?hsa05210)）
   - 赤字の遺伝子が疾患の病因遺伝子を示しています
 
-![kegg19](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg19.png)
+![kegg19](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg19.png)
 
 - プルダウンメニューから [Homo sapiens (human) + Disease/drug](http://www.genome.jp/kegg-bin/show_pathway?org_name=hsadd&mapno=05210&mapscale=&show_description=hide) を選択
   - ピンクのボックスは何らかの疾患で病因遺伝子となっている遺伝子を示しています
   - ライトブルーのボックスは何らかの疾患で医薬品のターゲットとなっている遺伝子を示しています
 
-![kegg20](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg20.png)
+![kegg20](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg20.png)
 
 このように、KEGG では正常な状態のパスウェイの他に、病原因子や医薬品、そのターゲットなどの情報もパスウェイとして表現されています
 
@@ -412,29 +412,29 @@
   - eco：非病原性大腸菌 k-12
   - ecs：病原性大腸菌 O157
 
-![kegg13](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg13.png)
-  
+![kegg13](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg13.png)
+
 - 上のメニューの [Pathway map](http://www.genome.jp/kegg-bin/show_organism?menu_type=pathway_maps&orgs=eco%20ecs) をクリック
 - 好きなパスウェイをクリック
   - 前者が持っている遺伝子が緑、後者が持っている遺伝子がピンクで表示
   - Overview パスウェイの場合、両者が持っている遺伝子はライトブルーで表示
 
-![kegg14](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg14.png)
+![kegg14](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg14.png)
 
 - 03070 : [Bacterial secretion system](http://www.genome.jp/kegg-bin/show_pathway?orgs=eco%20ecs&mapno=03070) パスウェイでは病原性に関わる III型、VI型分泌装置が O157 側だけが持っているのがわかる
 
-![kegg15](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg15.png)
+![kegg15](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg15.png)
 
 - 05130 : [Pathogenic Escherichia coli infection](http://www.genome.jp/kegg-bin/show_pathway?orgs=eco%20ecs&mapno=05130)
 
-![kegg16](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg16.png)
+![kegg16](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg16.png)
 
 ##### 同様にアブラムシとブフネラで、00290 : Valine, leucine and isoleucine biosynthesis の主観比較パスウェイを見てみよう
   - アブラムシ : api
   - ブフネラ : buc
   - 共生生物間のパスウェイ補完によってアミノ酸合成が可能になっていることがわかる
 
-![kegg17](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg17.png)
+![kegg17](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg17.png)
 
 ３種以上の比較も可能です
 
@@ -452,7 +452,7 @@ KEGG には遺伝子リストからパスウェイをマッピングするツー
       - 線の色はオプション
       - 色は16進数表記か基本的なカラーネームで記述
 
-![kegg21](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg21.png)
+![kegg21](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg21.png)
 
 - テキストエリア右の Example を選択して Exec ボタンをクリックすると、ヒットしたパスウェイのリストが表示されます（カッコの中はヒットした要素の数）
 
@@ -477,7 +477,7 @@ KEGG には遺伝子リストからパスウェイをマッピングするツー
 - Use uncolored diagrams のチェックボックスをチェック（生物種マップの緑色を消去）
 - Exec ボタンをクリック
 
-![kegg23](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg23.png)
+![kegg23](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg23.png)
 
 自由に色を塗れる反面、色の定義付けなどは自分で行う必要があります
 
@@ -493,7 +493,7 @@ KEGG には遺伝子リストからパスウェイをマッピングするツー
 
 数値がグラデーションになってマッピングされる
 
-![kegg22](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-kegg22.png)
+![kegg22](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg22.png)
 
 他の２つの Example: もマッピングしてみよう
 
@@ -513,7 +513,7 @@ KEGG に登録されている配列データと類似性を計算し、自動で
 - [BlastKOALA](http://www.kegg.jp/blastkoala/), [GhostKOALA](http://www.kegg.jp/ghostkoala/)
   - 配列類似性の計算は BLAST, GhostX ベース
   - クエリーからデータベースへの片方向の計算なのと、データベースを圧縮しているぶん KAAS より早い
-  
+
 #### BlastKOALA を使ったパスウェイへのマッピング
 - [Annotate Sequence by BlastKOALA](http://www.kegg.jp/kegg/tool/annotate_sequence.html)
 - Exapmle: の sequence.txt をコピー＆ペースト、もすくはダウンロードしてファイルを選択
@@ -559,7 +559,7 @@ gene5400	…
   - [DAVID](https://david.ncifcrf.gov/home.jsp)
   - [DAVID-dev](https://david-d.ncifcrf.gov/home.jsp)
 
-![david1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david1.png)
+![david1](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david1.png)
 
 - 遺伝子リストのロード
   - Step 1 : リストをコピー＆ペーストするか、ファイルアップロード
@@ -567,26 +567,26 @@ gene5400	…
   - Step 3 : Gene List を選択
   − Step 4 : Submit
 
-![david2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david2.png)
+![david2](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david2.png)
 
 - 遺伝子リストが保存されます（例：シロイヌナズナの 2,928 遺伝子）
 - Functional Annotation Tool をクリックして、この遺伝子リストを解析
 
-![david3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david3.png)
+![david3](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david3.png)
 
 - Gene Ontology を含め幾つかのカテゴリにマッピングされています
 - 今回は Pathways の KEGG_PATHWAY の Chart ボタンをクリック
 
-![david4](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david4.png)
+![david4](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david4.png)
 
 - 解析した遺伝子リストに関連の強いパスウェイのリストがポップアップされます
 
-![david5](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david5.png)
+![david5](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david5.png)
 
 - これから、発現が現象した遺伝子は光合成関連の機能に関わるものが多いことが読み取れます
 - 各パスうウェイをクリックすると、KEGG パスウェイにマッピングされた画像が表示されます
 
-![david6](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david6.png)
+![david6](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david6.png)
 
 #### 実習 3-10. ID 変換をしてからパスウェイにマッピングしよう
 KEGGパスウェイでは、マッピングで扱える 遺伝子 ID に制限があります
@@ -595,9 +595,9 @@ DAVID の ID 変換機能や、[Link DB](http://www.genome.jp/linkdb/)、[bioDBn
 ##### DAVID
 - 遺伝子リストをロードした後、上のメニューの Shortcut to DAVID Tools > Gene ID Conversion で KEGG で扱える "ENTREZ_GENE_ID" に変換ができます
 
-![david7](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david7.png)
-![david8](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david8.png)
-![david9](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-david9.png)
+![david7](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david7.png)
+![david8](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david8.png)
+![david9](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-david9.png)
 
 ##### [Link DB](http://www.genome.jp/linkdb/)
 データベースエントリー ID 間のリンク情報を収集したデータベース
@@ -613,15 +613,15 @@ ID 変換にも利用可能（今回のサンプルの Affy ID のは対応し�
   - Organism : 3702 (A.thaliana の taxon id)
   - ID List : [Affy ID list](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/dat/list1.txt) をコピー＆ペースト
 
-![biofb1](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biodb1.png)
+![biofb1](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biodb1.png)
 
 - 直接 KEGG ID に変換できます（内部的には Entrez Gene ID 経由だと思われます）
-  
-![biofb2](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biodb2.png)
+
+![biofb2](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biodb2.png)
 
 ##### [変換した遺伝子リスト](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/dat/list2.txt)をダウンロードして、KEGG の [Search&Color Pathway](http://www.genome.jp/kegg/tool/map_pathway2.html) を使ってパスウェイにマッピングしてみましょう
 
-![biofb3](https://github.com/moriya-dbcls/AJACS60/blob/master/moriya/images/a60-biodb3.png)
+![biofb3](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biodb3.png)
 
 
 
