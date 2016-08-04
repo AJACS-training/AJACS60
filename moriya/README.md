@@ -5,20 +5,20 @@
 守屋 勇樹 moriya@dbcls.rois.ac.jp  
 2016/07/05 AJACS安芸  
 
---
+---
 ## 講習会の流れ  
 
-今回の講習ではパスウェイデータベースの紹介と、ウェブブラウザを使った３つのデータベースの操作を行います
-  - パスウェイデータベースの概要
-  - BioCyc に触れてみる
-    - データをパスウェイにマッピングする
-  - Reactome に触れてみる
-    - Analysis tool を用いてパスウェイにマッピングする
-  - KEGG PATHWAY
-    - KEGG Mapper を用いてパスウェイにマッピングする
-    - BlastKOALA を用いて新規遺伝子の機能を推定し、パスウェイにマッピングする
+今回の講習ではパスウェイデータベースの紹介と、ウェブブラウザを使った３つのデータベースの操作を行います  
+- パスウェイデータベースの概要
+- BioCyc に触れてみる
+  - データをパスウェイにマッピングする
+- Reactome に触れてみる
+  - Analysis tool を用いてパスウェイにマッピングする
+- KEGG PATHWAY
+  - KEGG Mapper を用いてパスウェイにマッピングする
+  - BlastKOALA を用いて新規遺伝子の機能を推定し、パスウェイにマッピングする
 
---
+---
 #### 講習に際しての注意とお願い
 
 - みんなで同時にアクセスするとサイトにつながりにくくなることが予想されます。
@@ -93,7 +93,7 @@
   - 代謝パスウェイでは代謝産物をノード、酵素反応をエッジとして表現されています
   - 制御系ではタンパク質や遺伝子、その他の小分子をノード、その関係性（活性化、抑制、リン酸化など）がエッジとして表現されています
 
-![pathway1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-pathway1.png)
+![pathway1](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-pathway1.png)
 
 #### パスウェイデータベースのデータ形式
 計算機での取り扱いを目的として XML (Extensible Markup Language) で記述されていることが多くなっています
@@ -152,7 +152,7 @@
 ![biocyc6](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-biocyc6.png)
 
 - 右の Options メニューから、表示のカスタマイズやダウンロードが可能
-- ![biocyc3](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-biocyc3.png)
+- ![biocyc3](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-biocyc3.png)
 
 
 #### 実習 1-3. 種間比較をしてみよう
@@ -318,7 +318,7 @@
     - BlastKOALA : BLAST ベースの自動ツールによるアノテーション（ドラフトゲノム）
     - GhostKOALA : GhostX ベースの自動ツールによるアノテーション（メタゲノム）
 
-![kegg5x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg5.png)
+![kegg5x](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg5.png)
 
 - データベースリスト
   - Genomes : 主に NCBI Refseq、GenBank に登録された生物種
@@ -358,11 +358,11 @@
 
 ![kegg10](https://raw.githubusercontent.com/moriya-dbcls/AJACS60/master/moriya/images/a60-kegg10.png)
 
-![kegg6x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg6.png)
+![kegg6x](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg6.png)
 
 - 種、属でまとめたパスウェイ、ドラフトゲノム、メタゲノムのパスウェイはここからは選べないので、生物種リストのページから、種のページ、パスウェイリストへ移動する必要があります
 
-![kegg7x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg7.png)
+![kegg7x](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg7.png)
 
 - 一部のボックスが緑色で塗られる、その生物（またはサンプル）の持つ遺伝子を示しています
 
@@ -370,9 +370,9 @@
 
 #### リファレンスパスウェイと種毎のパスウェイの関係  
 
-![kegg2x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg2.png)
+![kegg2x](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg2.png)
 
-![kegg3x](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg3.png)
+![kegg3x](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg3.png)
 
 
 #### 実習 3-4. Overview マップを見てみよう  
@@ -472,7 +472,7 @@ KEGG には遺伝子リストからパスウェイをマッピングするツー
   - コードがわからないので、org ボタンをクリック
   - ポップアップウィンドウでに 種名を入力すると、下のボックスに候補が出るので、選択したああと Select をクリック
   - チンパンジーのコード "ptr" が入力されていることを確認
-- ![kegg8](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg8.png)
+- ![kegg8](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg8.png)
 - Primry ID: で NCBI-GeneID を選択
 - Use uncolored diagrams のチェックボックスをチェック（生物種マップの緑色を消去）
 - Exec ボタンをクリック
@@ -489,7 +489,7 @@ KEGG には遺伝子リストからパスウェイをマッピングするツー
 - Enter file name containing the data: でダウロードしたサンプルファイルを指定
 - File type: で Numerical value を選択
 - Exec ボタンをクリック
-- ![kegg9](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg9.png)
+- ![kegg9](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg9.png)
 
 数値がグラデーションになってマッピングされる
 
@@ -508,7 +508,7 @@ KEGG に登録されている配列データと類似性を計算し、自動で
     - GhostX は BLAST より精度は劣るが 100 倍早い					 
     - GhostZ は GhostX より精度は劣るが２倍早い
   - 種間で両方向ベストヒットを利用して遺伝子機能を推定（片方向も可能）
-  - ![kegg13](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg13.png)
+  - ![kegg13](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg13.png)
 
 - [BlastKOALA](http://www.kegg.jp/blastkoala/), [GhostKOALA](http://www.kegg.jp/ghostkoala/)
   - 配列類似性の計算は BLAST, GhostX ベース
@@ -521,11 +521,11 @@ KEGG に登録されている配列データと類似性を計算し、自動で
 - Family/Genus ボタンをクリック
   - サンプルが Buchnera の仲間なので、KEGG の Buchnera データを使う
   - 新たに開いたウィンドウで、Buchnera を探し、Taxonomy番号をクリック
-- ![kegg10](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg10.png)
+- ![kegg10](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg10.png)
 - Exec ボタンをクリック
   - 数分待つ（講習会用結果例 : [BlastKOALA](http://www.kegg.jp/kegg-bin/blastkoala_result?id=05542d03b7004212294ff162ef08683fbf16cfb7&passwd=7Q95jf&mode=mapper), [GhostKOALA](http://www.kegg.jp/kegg-bin/blastkoala_result?id=277f705de16dc96171e5d4c07c1133a61bb0e09f&passwd=k32y6B&type=ghostkoala)）
   - Reconstruct Pathway から遺伝子がマッピングされたパスウェイを見ることができる
-- ![kegg11](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-kegg11.png)
+- ![kegg11](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-kegg11.png)
 
 遺伝子IDとK番号の対応表を保存しておけば、KEGG Mapper 使っていつでも KEGG PATHWAY へのマッピングができる  
 - [Reconstruct Pathway](http://www.genome.jp/kegg/tool/map_pathway.html)
@@ -603,9 +603,9 @@ DAVID の ID 変換機能や、[Link DB](http://www.genome.jp/linkdb/)、[bioDBn
 データベースエントリー ID 間のリンク情報を収集したデータベース
 ID 変換にも利用可能（今回のサンプルの Affy ID のは対応していません）
   - 図の Genes をクリックすると、KEGG に登録されている遺伝子と関連のあるデータベースが表示される
-  - ![linkdb1](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb1.png)
+  - ![linkdb1](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-linkdb1.png)
   - 表示されてたデータベースをクリックすると、下のフォームに選択したデータベースの内容が入るので、Download ボタンをクリックすると対応表がダウンロードできる
-  - ![linkdb2](https://github.com/moriya-dbcls/AJACS58/blob/master/moriya/images/a58-linkdb2.png)
+  - ![linkdb2](https://raw.githubusercontent.com/moriya-dbcls/AJACS58/master/moriya/images/a58-linkdb2.png)
 
 ##### [bioDBnet](https://biodbnet-abcc.ncifcrf.gov/db/db2db.php)
   - Input : Affy ID
